@@ -36,14 +36,18 @@ function parseBraces(str: string, startIndex: number): { content: string; endInd
  */
 function unwrapAllBracedCommands(str: string): string {
   let prev = '';
-  let cur = str;
+  let cur = str
+    .replace(/\x09ext/g, '\\text')
+    .replace(/\x0crac/g, '\\frac')
+    .replace(/\x09imes/g, '\\times');
+
   // Loop until all nested commands are unwrapped
   while (cur !== prev) {
     prev = cur;
     let res = '';
     let i = 0;
     while (i < cur.length) {
-      const match = cur.slice(i).match(/^(?:\\\\|\\b)(text|mathbf|mathit|mathrm|bf)\{/);
+      const match = cur.slice(i).match(/^(?:\\|\b)(text|mathbf|mathit|mathrm|bf)\{/);
       if (match) {
         const braceIdx = i + match[0].length - 1;
         const b = parseBraces(cur, braceIdx);
@@ -76,7 +80,7 @@ function extractFractions(str: string): FracPart[] {
   let i = 0;
   let lastIdx = 0;
   while (i < str.length) {
-    const fracMatch = str.slice(i).match(/^(?:\\\\|\\b)frac\{/);
+    const fracMatch = str.slice(i).match(/^(?:\\|\b)frac\{/);
     if (fracMatch) {
       if (i > lastIdx) {
         parts.push({ type: 'text', text: str.slice(lastIdx, i) });
@@ -114,7 +118,7 @@ function cleanMathSymbols(str: string): string {
   let i = 0;
   let lastIdx = 0;
   while (i < s.length) {
-    const fracMatch = s.slice(i).match(/^(?:\\\\|\\b)frac\{/);
+    const fracMatch = s.slice(i).match(/^(?:\\|\b)frac\{/);
     if (fracMatch) {
       if (i > lastIdx) fracProcessed += s.slice(lastIdx, i);
       const numBraceIdx = i + fracMatch[0].length - 1;
@@ -143,7 +147,7 @@ function cleanMathSymbols(str: string): string {
   i = 0;
   lastIdx = 0;
   while (i < s.length) {
-    const sqrtMatch = s.slice(i).match(/^(?:\\\\|\\b)sqrt\{/);
+    const sqrtMatch = s.slice(i).match(/^(?:\\|\b)sqrt\{/);
     if (sqrtMatch) {
       if (i > lastIdx) sqrtProcessed += s.slice(lastIdx, i);
       const braceIdx = i + sqrtMatch[0].length - 1;
@@ -195,8 +199,8 @@ function cleanMathSymbols(str: string): string {
     .replace(/(?:\\le|\ble)\b/g, ' ≤ ')
     .replace(/(?:\\ge|\bge)\b/g, ' ≥ ')
     .replace(/(?:\\pm|\bpm)\b/g, ' ± ')
-    .replace(/(?:\\circ|\bcirc)\b/g, '°')
-    .replace(/(?:\\mu|\bmu)\b/g, 'μ')
+    .replace(/\\circ|\bcirc/g, '°')
+    .replace(/\\mu|\bmu/g, 'μ')
     .replace(/(?:\\Delta|\bDelta)\b/g, 'Δ')
     .replace(/(?:\\sigma|\bsigma)\b/g, 'σ')
     .replace(/(?:\\theta|\btheta)\b/g, 'θ')
@@ -209,6 +213,9 @@ function cleanMathSymbols(str: string): string {
     .replace(/(?:\\rho|\brho)\b/g, 'ρ')
     .replace(/(?:\\tau|\btau)\b/g, 'τ')
     .replace(/(?:\\quad|\bquad)\b/g, '  ')
+    .replace(/(?:\\text|\btext)\b/g, '')
+    .replace(/(?:\\mathbf|\bmathbf)\b/g, '')
+    .replace(/(?:\\frac|\bfrac)\b/g, '')
     .replace(/\\%/g, '%')
     .replace(/\\\\/g, '')
     .replace(/\\/g, '')
