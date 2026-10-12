@@ -29,6 +29,10 @@ yarn-error.log*
 # vercel
 .vercel
 
+# archives
+*.zip
+freetissuecamp-deploy.zip
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
