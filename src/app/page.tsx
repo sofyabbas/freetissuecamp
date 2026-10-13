@@ -64,7 +64,7 @@ export default function HomePage() {
 
             {/* Subheading */}
             <p className="text-base sm:text-lg text-charcoal-600 leading-relaxed mb-8 max-w-2xl mx-auto font-medium">
-              منهاج حقيقي متقدم يغطي ألياف اليوكاليبتوس، تكرير LCR، ماكينات Crescent Former، أسطوانات اليانكي والكابينة الغازية 450°م، سكاكين الكريب والنعومة، خطوط التحويل، وفحوصات الجودة ISO 12625.
+              منهاج حقيقي متقدم يغطي ألياف اليوكاليبتوس، تكرير LCR، ماكينات Crescent Former، أسطوانات اليانكي والهود الغازي 450°م، سكاكين الكريب والنعومة، خطوط التحويل، وفحوصات الجودة ISO 12625.
             </p>
 
             {/* CTA Buttons */}
