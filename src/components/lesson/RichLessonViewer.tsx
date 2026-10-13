@@ -1,16 +1,18 @@
 'use client';
 
 import React from 'react';
-import { Info, Sparkles, CheckCircle2, ChevronLeft } from 'lucide-react';
+import { Info, Sparkles, CheckCircle2, ChevronLeft, Search, Image as ImageIcon } from 'lucide-react';
 
 interface RichLessonViewerProps {
   content: string;
 }
 
 interface BlockItem {
-  type: 'table' | 'math' | 'h1' | 'h2' | 'h3' | 'h4' | 'hr' | 'quote' | 'code' | 'ul' | 'ol' | 'p';
+  type: 'table' | 'math' | 'h1' | 'h2' | 'h3' | 'h4' | 'hr' | 'quote' | 'code' | 'ul' | 'ol' | 'p' | 'image';
   content?: string;
   items?: string[];
+  alt?: string;
+  src?: string;
 }
 
 /**
@@ -335,6 +337,23 @@ function parseBlocks(content: string): BlockItem[] {
       continue;
     }
 
+    // 0. Image (![alt](src))
+    const imgMatch = trimmed.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
+    if (imgMatch) {
+      let src = imgMatch[2];
+      const urlMatch = src.match(/\/public\/images\/courses\/([^/?#]+)/);
+      if (urlMatch) {
+        src = `/images/courses/${urlMatch[1]}`;
+      }
+      blocks.push({
+        type: 'image',
+        alt: imgMatch[1],
+        src: src,
+      });
+      i++;
+      continue;
+    }
+
     // 1. Table
     if (trimmed.startsWith('|') && i + 1 < lines.length && lines[i + 1].includes('|') && lines[i + 1].includes('-')) {
       const tableLines: string[] = [];
@@ -521,8 +540,52 @@ export function RichLessonViewer({ content }: RichLessonViewerProps) {
           return <hr key={idx} className="my-6 border-charcoal-200" />;
         }
 
+        // Image Diagram
+        if (block.type === 'image' && block.src) {
+          return (
+            <figure
+              key={idx}
+              className="my-8 rounded-3xl border border-charcoal-200/90 bg-white p-3 sm:p-5 shadow-sm overflow-hidden text-center group transition-all hover:shadow-md"
+            >
+              <div className="relative overflow-hidden rounded-2xl bg-paper-50/50 border border-charcoal-100 flex items-center justify-center p-2 sm:p-3 min-h-[200px]">
+                <img
+                  src={block.src}
+                  alt={block.alt || 'مخطط توضيحي صناعي'}
+                  className="w-full max-h-[460px] object-contain transition-transform duration-300 group-hover:scale-[1.01]"
+                  loading="lazy"
+                />
+              </div>
+              {block.alt && (
+                <figcaption className="mt-3.5 text-xs sm:text-sm font-bold text-charcoal-800 flex items-center justify-center gap-2">
+                  <span className="inline-flex items-center gap-1 text-primary-800 bg-primary-100 border border-primary-200 px-2.5 py-0.5 rounded-full text-xs font-black">
+                    <ImageIcon className="w-3.5 h-3.5 text-primary-600 inline" /> مخطط هندسي معتمد
+                  </span>
+                  <span>{renderInlineText(block.alt)}</span>
+                </figcaption>
+              )}
+            </figure>
+          );
+        }
+
         // Quote
         if (block.type === 'quote' && block.content) {
+          const isOem = block.content.includes('OEM') || block.content.includes('مراجع ومصطلحات البحث الصناعي');
+          if (isOem) {
+            return (
+              <div
+                key={idx}
+                className="my-6 p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-charcoal-900 via-charcoal-800 to-primary-950 border border-charcoal-700 text-white shadow-md text-right"
+              >
+                <div className="flex items-center gap-2 mb-2 text-primary-300 text-xs font-bold">
+                  <Search className="w-4 h-4 text-primary-400" />
+                  <span>مراجع ومصطلحات البحث الموصى بها في الكتالوجات العالمية (OEM Search Queries):</span>
+                </div>
+                <div className="text-xs sm:text-sm text-paper-200 leading-relaxed font-sans" dir="auto">
+                  {renderInlineText(block.content.replace(/^[*\s]+/, ''))}
+                </div>
+              </div>
+            );
+          }
           return (
             <div
               key={idx}

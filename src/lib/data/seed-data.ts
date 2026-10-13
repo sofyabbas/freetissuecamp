@@ -55,7 +55,7 @@ export const learningPaths: LearningPath[] = [
     "id": "path-pressing-yankee-creping",
     "title": "الكبس، أسطوانة اليانكي، كيمياء الطلاء وميكانيكا الكرمشة",
     "title_en": "Pressing, Yankee Engineering & Creping Mechanics",
-    "description": "أسطوانة اليانكي وتغيير شفرات الكريب، كيمياء فيلم الطلاء الثلاثي ودرفيل الكبس SPR، الشو برس Shoe Press (ViscoNip)، ونمذجة إجهادات أسطوانات الصلب وعلاج Chatter Marks.",
+    "description": "أسطوانة اليانكي وتغيير شفرات الكريب، كيمياء فيلم الطلاء الثلاثي ودرفيل العصر SPR، الشو برس Shoe Press (ViscoNip)، ونمذجة إجهادات أسطوانات الصلب وعلاج Chatter Marks.",
     "description_en": "Yankee dryer operation, doctor blade changing safety, coating package chemistry, shoe pressing (ViscoNip), and thermal stress modeling to prevent chatter marks.",
     "icon": "Cog",
     "color": "#b45309",
@@ -289,7 +289,7 @@ export const courses: Course[] = [
     "learning_path_id": "path-forming-machine",
     "title": "جولة تفقدية لمنطقة التشكيل، مسارات أقمشة التشكيل واللبادات",
     "title_en": "Forming Section Walk-Down, Fabric Geometries & Roll Mechanics",
-    "description": "دورة المستوى الأول: تشريح قسم التشكيل، مسارات سلك التشكيل ولباد الكبس، درافيل التشكيل والصرف، أحواض الطرد المركزي (Savealls)، وبروتوكول التفتيش الميداني قبل التشغيل.",
+    "description": "دورة المستوى الأول: تشريح قسم التشكيل، مسارات سلك التشكيل ولباد العصر، درافيل التشكيل والصرف، أحواض الطرد المركزي (Savealls)، وبروتوكول التفتيش الميداني قبل التشغيل.",
     "short_description": "مسارات الأسلاك واللبادات، درافيل التشكيل، وأحواض الصرف",
     "difficulty": "beginner",
     "estimated_hours": 10,
@@ -360,7 +360,7 @@ export const courses: Course[] = [
     "skills": [
       "حساب ضغط النزح الطارد P=T/R على درافيل التشكيل",
       "فهم الديناميكا الحرارية لتجفيف الهواء النافذ TAD",
-      "مقارنة تكنولوجيا الكبس المهيكل NTT و ATMOS",
+      "مقارنة تكنولوجيا العصر المهيكل NTT و ATMOS",
       "إدارة صناديق الفاكيوم والتشكيل ثلاثي الأبعاد"
     ],
     "requirements": [
@@ -411,17 +411,17 @@ export const courses: Course[] = [
   {
     "id": "course-tis-402",
     "learning_path_id": "path-pressing-yankee-creping",
-    "title": "كيمياء طلاء أسطوانة اليانكي، درفيل الكبس وفحص بصمة التآكل",
+    "title": "كيمياء طلاء أسطوانة اليانكي، درفيل العصر وفحص بصمة التآكل",
     "title_en": "Yankee Coating Chemistry, SPR Operations & Blade Wear Tribology",
-    "description": "دورة المستوى الثاني: مثلث طلاء اليانكي (اللاصق، العازل، والمعدل)، مظهر فيلم الكوتنج (المثالي مقابل المزجج والصمغي)، تشغيل درفيل الكبس والشفط SPR، وفحص بصمة تآكل الشفرة بالمجهر.",
-    "short_description": "مثلث طلاء اليانكي، درفيل الكبس SPR، وفحص بصمة تآكل الشفرة",
+    "description": "دورة المستوى الثاني: مثلث طلاء اليانكي (اللاصق، العازل، والمعدل)، مظهر فيلم الكوتنج (المثالي مقابل المزجج والصمغي)، تشغيل درفيل العصر والشفط SPR، وفحص بصمة تآكل الشفرة بالمجهر.",
+    "short_description": "مثلث طلاء اليانكي، درفيل العصر SPR، وفحص بصمة تآكل الشفرة",
     "difficulty": "intermediate",
     "estimated_hours": 14,
     "total_lessons": 3,
     "total_modules": 2,
     "skills": [
       "إدارة معدلات رش كيمياء الكوتنج (mg/m²)",
-      "تشغيل وضبط فراغ درفيل الكبس SPR",
+      "تشغيل وضبط فراغ درفيل العصر SPR",
       "محاذاة عارضة الرشاشات وضبط زاوية 15° Offset",
       "قياس بصمة تآكل الشفرة بالمجهر Optical Wear Footprint"
     ],
@@ -452,12 +452,12 @@ export const courses: Course[] = [
     "total_modules": 2,
     "skills": [
       "نمذجة قوى صدم الكرمشة وتردد التجاعيد",
-      "تشغيل مكابس الشو برس الهيدروليكية ViscoNip",
+      "تشغيل عصارات الشو برس الهيدروليكية ViscoNip",
       "حساب الإجهادات الحرارية والميكانيكية لأسطوانات الصلب",
       "تحليل الاهتزازات الطيفية FFT ومنع Chatter Marks"
     ],
     "requirements": [
-      "إتمام دورة كيمياء الكوتنج ودرفيل الكبس TIS-402"
+      "إتمام دورة كيمياء الكوتنج ودرفيل العصر TIS-402"
     ],
     "objectives": [
       "تطبيق تكنولوجيا Shoe Press لرفع جفاف ما بعد الكبس إلى 44-48% دون فقدان البلك",
@@ -786,7 +786,7 @@ export const modules: Module[] = [
     "course_id": "course-tis-301",
     "title": "تشريح قسم التشكيل ومسارات الأقمشة والدرافيل",
     "title_en": "Forming Section Anatomy, Fabric Runs & Roll Mechanics",
-    "description": "مسارات أسلاك التشكيل ولبادات الكبس، درافيل الصرف وديناميكا الطرد المركزي.",
+    "description": "مسارات أسلاك التشكيل ولبادات العصر، درافيل الصرف وديناميكا الطرد المركزي.",
     "order": 1,
     "lessons": [],
     "total_lessons": 2
@@ -836,7 +836,7 @@ export const modules: Module[] = [
     "course_id": "course-tis-303",
     "title": "تكنولوجيا التيشيو المهيكل فائق الامتصاص (TAD, NTT, ATMOS)",
     "title_en": "Structured Tissue Engineering: TAD, NTT & ATMOS Processes",
-    "description": "ميكانيزم التجفيف بالهواء النافذ TAD والكبس المهيكل، وتوليد البلك الفائق.",
+    "description": "ميكانيزم التجفيف بالهواء النافذ TAD والعصر المهيكل، وتوليد البلك الفائق.",
     "order": 2,
     "lessons": [],
     "total_lessons": 2
@@ -874,9 +874,9 @@ export const modules: Module[] = [
   {
     "id": "mod-tis-402-2",
     "course_id": "course-tis-402",
-    "title": "درفيل الكبس والشفط وفحص بصمة تآكل الشفرة بالمجهر",
+    "title": "درفيل العصر والشفط وفحص بصمة تآكل الشفرة بالمجهر",
     "title_en": "Suction Pressure Roll (SPR) & Blade Wear Footprint Tribology",
-    "description": "تشغيل درفيل الكبس SPR، وقياس عرض تآكل شفرة الكريب Land Width بالمجهر الضوئي.",
+    "description": "تشغيل درفيل العصر SPR، وقياس عرض تآكل شفرة الكريب Land Width بالمجهر الضوئي.",
     "order": 2,
     "lessons": [],
     "total_lessons": 1
@@ -886,7 +886,7 @@ export const modules: Module[] = [
     "course_id": "course-tis-403",
     "title": "ديناميكا الكرمشة والشو برس الهيدروليكي ViscoNip",
     "title_en": "High-Frequency Creping Dynamics & Hydraulic Shoe Pressing",
-    "description": "تردد التجاعيد الدقيقة، النافذة اللزجة المرنة، ومكابس الشو برس لزيادة الجفاف وحفظ البلك.",
+    "description": "تردد التجاعيد الدقيقة، النافذة اللزجة المرنة، وعصارات الشو برس لزيادة الجفاف وحفظ البلك.",
     "order": 1,
     "lessons": [],
     "total_lessons": 2
@@ -1036,7 +1036,7 @@ export const lessons: Lesson[] = [
 
 تعتمد صناعة ورق التيشيو فائق الجودة على فهم عميق للتركيب المورفولوجي والفيزيائي لجدار وتجويف ألياف السليلوز النباتية. الألياف ليست مجرد حشوات متجانسة، بل وحدات بنائية مجهرية تتباين كلياً في أبعادها ومرونتها.
 
-![Hardwood vs Softwood Fiber Cell Wall Anatomy](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-101-fiber-anatomy.svg)
+![Hardwood vs Softwood Fiber Cell Wall Anatomy](/images/courses/tis-101-fiber-anatomy.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Valmet tissue fiber morphology hardwood vs softwood cross section diagram\`
@@ -1062,7 +1062,7 @@ export const lessons: Lesson[] = [
   حيث يعطي لب اليوكاليبتوس ($Eucalyptus$) ما بين $18 - 24 \\times 10^6\\text{ ليفة/جم}$، بينما يعطي اللب الطويل الشمالي ($NBSK$) حوالي $3 - 5 \\times 10^6\\text{ ليفة/جم}$ فقط.
 * **نسبة رانكل ومرونة انهيار الليفة (Runkel Ratio):**
   $$\\text{Runkel Ratio} = \\frac{2 \\cdot w}{l_d}$$
-  حيث $w$ هو سُمك جدار الخلية ($\\mu\\text{m}$) و $l_d$ هو قطر التجويف الداخلي (Lumen). في مناديل الوجه الفاخرة، نشترط نسبة رانكل $< 1.0$؛ حيث ينهار الجدار الرقيق تحت ضغط الكبس ويتحول إلى شريط حريري مسطح يوفر مرونة انحناء استثنائية ($S_b$).
+  حيث $w$ هو سُمك جدار الخلية ($\\mu\\text{m}$) و $l_d$ هو قطر التجويف الداخلي (Lumen). في مناديل الوجه الفاخرة، نشترط نسبة رانكل $< 1.0$؛ حيث ينهار الجدار الرقيق تحت ضغط العصر ويتحول إلى شريط حريري مسطح يوفر مرونة انحناء استثنائية ($S_b$).
 
 ---
 
@@ -1088,7 +1088,7 @@ export const lessons: Lesson[] = [
 
 تبدأ جودة التيشيو من ساحة استلام بالات اللب الخام. تصل البالات بوزن قياسي $250\\text{ كجم}$ للبالة، مربوطة بأسلاك فولاذية عالية الشد تمثل خطراً ميكانيكياً جسيماً إذا لم يتم التعامل معها ببروتوكولات دقيقة.
 
-![Pulp Bale De-wiring and Inbound Inspection Layout](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-101-bale-safety.svg)
+![Pulp Bale De-wiring and Inbound Inspection Layout](/images/courses/tis-101-bale-safety.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Automatic pulp bale dewiring machine safety cross section\`
@@ -1147,7 +1147,7 @@ export const lessons: Lesson[] = [
 
 في صناعة التيشيو، تواجه هندسة العمليات معضلة فيزيائية مستمرة: الخصائص الثلاث الكبرى لورق التيشيو (**النعومة السطحية، متانة الشد، والقدرة على الامتصاص**) تتنافر فيزيائياً مع بعضها البعض.
 
-![The Tissue Quality Triangle Trade-offs](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-101-quality-triangle.svg)
+![The Tissue Quality Triangle Trade-offs](/images/courses/tis-101-quality-triangle.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Tissue paper softness vs tensile strength trade-off curve TAPPI\`
@@ -1182,9 +1182,9 @@ export const lessons: Lesson[] = [
 
 | العَرَض الميداني المرصود | السبب الجذري المحتمل | الإجراء الهندسي الفوري للحل |
 | :--- | :--- | :--- |
-| شكوى العملاء من خشونة مناديل الوجه | ارتفاع قيمة $TS750$ نتيجة تكرير زائد للب الطويل أو زيادة ضغط كبس درفيل SPR. | خفض طاقة التكرير النوعية، وتقليل الحمل الخطي لدرفيل الكبس. |
+| شكوى العملاء من خشونة مناديل الوجه | ارتفاع قيمة $TS750$ نتيجة تكرير زائد للب الطويل أو زيادة ضغط كبس درفيل SPR. | خفض طاقة التكرير النوعية، وتقليل الحمل الخطي لدرفيل العصر. |
 | انقطاع الورق عند خطوط التقطيع بالتحويل | انخفاض شد الاتجاه العرضي CD عن الحد الأدنى لمواصفة الماكينة. | رفع نسبة اللب الطويل بمقدار $+3\\%$ أو زيادة راتنج الشد الجاف CMC. |
-| بطء امتصاص الماء في مناديل المطبخ | انضغاط مسام الشيت وفقدان البلك (Bulk) بسبب كبس مفرط على اليانكي. | تخفيف ضغط الكبس وتعديل زاوية سكين الكريب لرفع كرمشة البلك. |`,
+| بطء امتصاص الماء في مناديل المطبخ | انضغاط مسام الشيت وفقدان البلك (Bulk) بسبب كبس مفرط على اليانكي. | تخفيف ضغط العصر وتعديل زاوية سكين الكريب لرفع كرمشة البلك. |`,
     estimated_minutes: 25,
     order: 3,
     is_free: true,
@@ -1200,7 +1200,7 @@ export const lessons: Lesson[] = [
 
 لكل صنف تجاري من ورق التيشيو معادلة خلط كيميائية ومورفولوجية فريدة تلبي وظيفته الاستهلاكية في السوق. استخدام خلطة موحدة لجميع المنتجات هو خطأ صناعي فادح يؤدي إلى ارتفاع التكلفة وتراجع الجودة.
 
-![Furnish Recipe Matrix by Grade](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-102-recipes.svg)
+![Furnish Recipe Matrix by Grade](/images/courses/tis-102-recipes.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Tissue furnish blend ratio facial vs bath tissue vs kitchen towel table\`
@@ -1255,7 +1255,7 @@ export const lessons: Lesson[] = [
 
 حوض البالبر (Hydrapulper) هو قلب بداية العملية الإنتاجية. مهمته ليست "فرم" أو "تقطيع" ألياف الخشب، بل توليد دوامة هيدروديناميكية عنيفة تتيح قوى قص مائي مجهري وتصادم ألياف لتفكيك شيتات البالات إلى ألياف مفردة معزولة دون الإضرار بطولها الطبيعي.
 
-![Hydrapulper Rotor and Flow Patterns](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-102-pulper-flow.svg)
+![Hydrapulper Rotor and Flow Patterns](/images/courses/tis-102-pulper-flow.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Andritz FibreSolve pulper rotor flow dynamics cross section\`
@@ -1319,7 +1319,7 @@ export const lessons: Lesson[] = [
 
 التركيز (Consistency) هو النسبة المئوية لوزن الألياف الجافة في معلق العجينة المائي. ثبات التركيز بنسبة خطأ لا تتجاوز $\\pm 0.05\\%$ عبر خزانات تحضير العجينة هو الضمان الوحيد لاستقرار الوزن القياسي (Basis Weight) ومنع تموجات الجراماج العرضية على ماكينة التيشيو.
 
-![Inline Consistency Control Loop Schematic](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-102-consistency-loop.svg)
+![Inline Consistency Control Loop Schematic](/images/courses/tis-102-consistency-loop.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Valmet inline optical consistency transmitter calibration protocol\`
@@ -1371,7 +1371,7 @@ export const lessons: Lesson[] = [
 
 ترتبط الجودة الفائقة لورق التيشيو بفيزياء أبعاد جدار الخلية النباتية. رقم الخشونة (Coarseness) ونسبة رانكل تحكمان قدرة الشيت على تكوين مصفوفة مسامية تتيح الامتصاص الفوري للسوائل وفق قوانين الموائع الشعرية.
 
-![Lucas-Washburn Capillary Flow Absorption Model](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-103-lucas-washburn.svg)
+![Lucas-Washburn Capillary Flow Absorption Model](/images/courses/tis-103-lucas-washburn.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Fiber coarseness measurement Kajaani FS5 standard TAPPI T 271\`
@@ -1397,7 +1397,7 @@ export const lessons: Lesson[] = [
   وبالمكاملة للحصول على مسافة التغلغل $h$ كدالة في الزمن $t$:
   $$h(t) = \\sqrt{\\frac{r \\cdot \\gamma \\cdot \\cos\\theta \\cdot t}{2 \\cdot \\eta}}$$
   حيث $r$ متوسط نصف قطر المسام الشعري، $\\gamma$ التوتر السطحي للسائل، $\\theta$ زاوية التلامس، و $\\eta$ اللزوجة الديناميكية.
-  - لتعظيم الامتصاص في مناديل المطبخ: يجب تعظيم نصف قطر المسام $r$ عبر رفع البلك (Bulk) وتقليل الكبس الميكانيكي، مع الحفاظ على $\\cos\\theta \\approx 1$ (زاوية تلامس صفرية وسطح هيدروفيلي محب للماء).
+  - لتعظيم الامتصاص في مناديل المطبخ: يجب تعظيم نصف قطر المسام $r$ عبر رفع البلك (Bulk) وتقليل العصر الميكانيكي، مع الحفاظ على $\\cos\\theta \\approx 1$ (زاوية تلامس صفرية وسطح هيدروفيلي محب للماء).
 * **معادلة رقم الخشونة وتعداد الألياف:**
   $$\\text{Coarseness } (C) = \\frac{M_{fibers}}{\\sum L_i} \\quad [\\text{mg/m}]$$
 
@@ -1407,7 +1407,7 @@ export const lessons: Lesson[] = [
 
 | العَرَض الميداني المرصود | السبب الجذري المحتمل | الإجراء الهندسي الفوري للحل |
 | :--- | :--- | :--- |
-| بطء امتصاص الماء في مناديل المطبخ | انخفاض نصف قطر المسام $r$ بسبب كبس مفرط أو زيادة المطريات الكيميائية. | خفض ضغط نيب الكبس، وتقليل جرعة المطريات لتقليل زاوية التلامس $\\theta$. |
+| بطء امتصاص الماء في مناديل المطبخ | انخفاض نصف قطر المسام $r$ بسبب كبس مفرط أو زيادة المطريات الكيميائية. | خفض ضغط نيب العصر، وتقليل جرعة المطريات لتقليل زاوية التلامس $\\theta$. |
 | خشونة مفاجئة مصحوبة بانخفاض النعومة | ارتفاع رقم الخشونة للشحنة الواردة عن $8.5\\text{ mg/100m}$. | خفض نسبة اللب الطويل الخشن وزيادة نسبة ألياف اليوكاليبتوس. |
 | تفتت بنية الورقة عند البلل | نقص الألياف الطويلة المساهمة في تكوين الهيكل الشعري المتشابك. | رفع نسبة NBSK بمقدار $+4\\%$ وتعديل إضافة مقاومات البلل. |`,
     estimated_minutes: 25,
@@ -1425,7 +1425,7 @@ export const lessons: Lesson[] = [
 
 يمثل صندوق التدفق متعدد الطبقات (Stratified Headbox) قمة التطور التكنولوجي في تشكيل التيشيو. يتيح حقن 3 طبقات ألياف متمايزة هيدروليكياً في نفس الوقت لتصنيع شيت يجمع بين السطح المخملي الناعم والقلب الإنشائي شديد المتانة.
 
-![3-Layer Stratified Headbox Cross Section and Vanes](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-103-stratified-headbox.svg)
+![3-Layer Stratified Headbox Cross Section and Vanes](/images/courses/tis-103-stratified-headbox.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Valmet OptiFlo multi layer tissue headbox dilution cross section\`
@@ -1483,7 +1483,7 @@ export const lessons: Lesson[] = [
 
 تمثل تكلفة اللب الخام ما بين **$55\\% - 65\\%$** من إجمالي تكاليف تصنيع ورق التيشيو. تمكن النمذجة الرياضية متعددة المتغيرات مهندس العمليات من الوصول إلى الخلطة الأقل تكلفة (Least-Cost Furnish) مع الوفاء الكامل بكافة محددات الجودة القياسية الصارمة.
 
-![Furnish Cost vs Softness Optimization Curves](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-103-cost-model.svg)
+![Furnish Cost vs Softness Optimization Curves](/images/courses/tis-103-cost-model.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Pulp furnish linear programming optimization cost paper mill\`
@@ -1516,7 +1516,7 @@ export const lessons: Lesson[] = [
 | العَرَض الميداني المرصود | السبب الجذري المحتمل | الإجراء الهندسي الفوري للحل |
 | :--- | :--- | :--- |
 | زيادة استهلاك اللب الطويل وارتفاع التكلفة | زيادة هامش الأمان للمشغلين دون مبرر لتقليل مخاطر الانقطاعات. | تدقيق مؤشرات الشد وإعادة ضبط نسبة الخلط بالـ DCS نحو القيمة المثلى. |
-| انخفاض جفاف الشيت الخارج من نيب الكبس | تدهور ترشيح العجينة نتيجة استخدام خلطة رخيصة غنية بالألياف الدقيقة. | مراجعة درجة الشوبر ريجلر للخلطة وإجراء فحص نسبة الشوائب المعملي. |
+| انخفاض جفاف الشيت الخارج من نيب العصر | تدهور ترشيح العجينة نتيجة استخدام خلطة رخيصة غنية بالألياف الدقيقة. | مراجعة درجة الشوبر ريجلر للخلطة وإجراء فحص نسبة الشوائب المعملي. |
 | فشل مواصفة النعومة في فحص الجودة النهائي | زيادة نسبة اللب الطويل على حساب اليوكاليبتوس لتقليل هادر القطع. | الالتزام الصارم بحدود البرمجة الخطية المعتمدة لصنف مناديل الوجه. |`,
     estimated_minutes: 25,
     order: 3,
@@ -1533,7 +1533,7 @@ export const lessons: Lesson[] = [
 
 يمثل قسم تحضير العجينة (Stock Preparation) حلقة الوصل الحيوية بين بالات اللب الصلبة الجافة وبين ماكينة التيشيو فائقة السرعة. أي اضطراب في هذا القسم ينتقل فوراً إلى صندوق التدفق ويظهر كعيوب في جودة الورق.
 
-![Stock Prep Flow Architecture and Chests](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-201-stockprep-flow.svg)
+![Stock Prep Flow Architecture and Chests](/images/courses/tis-201-stockprep-flow.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Stock preparation flow diagram mixing chest machine chest paper machine\`
@@ -1583,7 +1583,7 @@ export const lessons: Lesson[] = [
 
 تعتمد صناعة التيشيو على هندسة كيميائية دقيقة في الطرف الرطب (Wet-End). تلعب البوليمرات المضافة أدواراً حاسمة في تحقيق توازن المتانة الرطبة والجافة دون التضحية بالنعومة الفائقة.
 
-![Wet End Chemical Families and Injection](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-201-chemicals.svg)
+![Wet End Chemical Families and Injection](/images/courses/tis-201-chemicals.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`PAE wet strength resin vs GPAM temporary wet strength chemistry\`
@@ -1636,7 +1636,7 @@ export const lessons: Lesson[] = [
 
 تعتمد كفاءة الإضافات الكيميائية على دقة منظومات الضخ والحقن. أخطاء المعايرة في سكيد الكيماويات تؤدي إما إلى إهدار آلاف اللترات من البوليمرات باهظة الثمن، أو فشل مواصفات الجودة القياسية ورفض الشحنات.
 
-![Chemical Dosing Skid Instrumentation Diagram](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-201-dosing-skid.svg)
+![Chemical Dosing Skid Instrumentation Diagram](/images/courses/tis-201-dosing-skid.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Prominent progressive cavity chemical metering pump skid diagram\`
@@ -1696,7 +1696,7 @@ export const lessons: Lesson[] = [
 
 يعد التكرير منخفض التركيز (Low-Consistency Refining - LCR) من أخطر العمليات في مصنع التيشيو. في صناعة الكرتون، يتم تكرير كافة الألياف لزيادة المتانة، أما في ورق التيشيو الفاخر، فإن التكرير الخاطئ يقضي فوراً على النعومة والامتلاء (Bulk).
 
-![LCR Refiner Fiber Development vs Cutting](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-202-refining-philosophy.svg)
+![LCR Refiner Fiber Development vs Cutting](/images/courses/tis-202-refining-philosophy.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Low consistency refining LCR of tissue softwood vs hardwood TAPPI\`
@@ -1710,7 +1710,7 @@ export const lessons: Lesson[] = [
   > **"نكرر ألياف اللب الطويل (Softwood) فقط، ويُحظر تكرير ألياف اللب القصير (Eucalyptus) نهائياً!"**
 * **لماذا لا نكرر ألياف اليوكاليبتوس؟**
   - ألياف اليوكاليبتوس قصيرة بطبيعتها ($0.8 - 1.0	ext{ مم}$) ورقيقة الجدار. إذا مرت داخل المكرر، ستتعرض للتقطيع الميكانيكي وتتحول إلى شظايا ناعمة (Fines).
-  - هذه الشظايا تسد مسام لبادات الكبس، وتبطئ نزح المياه على السلك، وتجعل المناديل خشنة وقاسية جداً.
+  - هذه الشظايا تسد مسام لبادات العصر، وتبطئ نزح المياه على السلك، وتجعل المناديل خشنة وقاسية جداً.
 * **الهدف من تكرير اللب الطويل (NBSK):**
   - فرك وتفكيك الجدار الخارجي للألياف الطويلة وتوليد شعيرات مجهرية (Fibrillation) تزيد الترابط الهيدروجيني لتعزيز متانة الشيت دون تقطيع طول الليفة.
 
@@ -1749,7 +1749,7 @@ export const lessons: Lesson[] = [
 
 يقيس اختبار شوبر ريجلر (°SR) أو الفريتنس (CSF) درجة سهولة تصريف المياه من معلق الألياف. هو المؤشر اليومي الأكثر حساسية لتوجيه قرارات تشغيل المكررات وضمان ثبات خواص الشيت.
 
-![Schopper-Riegler Tester ISO 5267-1 Diagram](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-202-sr-tester.svg)
+![Schopper-Riegler Tester ISO 5267-1 Diagram](/images/courses/tis-202-sr-tester.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Schopper Riegler freeness tester procedure ISO 5267-1 diagram\`
@@ -1811,7 +1811,7 @@ export const lessons: Lesson[] = [
 
 تمثل مصافي الضغط (Pressure Screens) خط الدفاع الأخير لحماية ماكينة التيشيو. مهمتها استبعاد الشوائب، الكتل غير المكررة (Shives)، والملوثات اللزجة (Stickies) قبل وصول العجينة إلى صندوق التدفق الحساس.
 
-![Pressure Screen Rotor and Wedgewire Basket](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-202-pressure-screen.svg)
+![Pressure Screen Rotor and Wedgewire Basket](/images/courses/tis-202-pressure-screen.svg)
 
 > **مراجع ومصطلحات Keyword البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Voith BlueLine pressure screen multi-foil rotor dynamics diagram\`
@@ -1861,7 +1861,7 @@ export const lessons: Lesson[] = [
 
 لإدارة عملية التكرير باحترافية، لا يمكن الاعتماد على مجرد قراءة أمبير المحرك. تحكم نظرية الحمل الحافي الخاص (Specific Edge Load - SEL) ونظرية حمل السطح النوعي (SSL) شدة كل صدمة ميكانيكية تتعرض لها ألياف الخشب داخل المكرر.
 
-![Specific Edge Load Bar Geometry Model](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-203-sel-model.svg)
+![Specific Edge Load Bar Geometry Model](/images/courses/tis-203-sel-model.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Specific Edge Load SEL calculation formula double disc refiner TAPPI\`
@@ -1918,7 +1918,7 @@ export const lessons: Lesson[] = [
 
 تمثل راتنجات البولي أميد-إيبيكلوروهيدرين (PAE) العمود الفقري لإنتاج ورق التيشيو المقاوم للماء (كمناديل المطبخ ومسحات الورش). لا تعتمد كفاءة الراتنج على مجرد إضافته في الخزان، بل على اكتمال تفاعلات التشابك التساهمي المعقدة تحت التأثير الحراري لأسطوانة اليانكي.
 
-![PAE Azetidinium Cross-linking Mechanism](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-203-pae-chemistry.svg)
+![PAE Azetidinium Cross-linking Mechanism](/images/courses/tis-203-pae-chemistry.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`PAE resin azetidinium group crosslinking reaction mechanism cellulose TAPPI\`
@@ -1971,7 +1971,7 @@ export const lessons: Lesson[] = [
 
 الطرف الرطب لماكينة التيشيو هو نظام كوليدالي (غروي) معقد تتحكم فيه قوى التجاذب والتنافر الكهروستاتيكي. تمثل إدارة الجهد الزيتي (Zeta Potential) والطلب على الشحنة المفتاح الذهبي لتقليل استهلاك الكيماويات وضمان أعلى احتفاظ للألياف ومقاومة الرغوة.
 
-![Zeta Potential and Colloidal Charge Window](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-203-zeta-potential.svg)
+![Zeta Potential and Colloidal Charge Window](/images/courses/tis-203-zeta-potential.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Mütek PCD 05 particle charge detector titration curve wet end\`
@@ -2028,14 +2028,14 @@ export const lessons: Lesson[] = [
   {
     id: "les-tis-301-1",
     module_id: "mod-tis-301-1",
-    title: "تشريح قسم التشكيل ومسار سلك التشكيل ولباد الكبس",
+    title: "تشريح قسم التشكيل ومسار سلك التشكيل ولباد العصر",
     title_en: "Forming Section Anatomy, Wire & Felt Routing and Dynamic Wrap",
     type: 'lesson',
     content: `### تشريح قسم التشكيل ومسارات الأقمشة (Forming Section Anatomy):
 
 قسم التشكيل هو المنطقة التي تتحول فيها العجينة السائلة ($99.8\\%$ مياه و $0.2\\%$ ألياف) إلى فرشة ورقية متماسكة القوام في زمن مذهل لا يتجاوز **$0.02$ ثانية** على سرعات تفوق $2000\\text{ م/د}$.
 
-![Forming Section Roll Layout and Fabric Run](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-301-forming-layout.svg)
+![Forming Section Roll Layout and Fabric Run](/images/courses/tis-301-forming-layout.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Valmet Crescent Former OptiFormer tissue machine layout diagram\`
@@ -2047,8 +2047,8 @@ export const lessons: Lesson[] = [
 ### الطبقة (أ) - دليل المشغل وفني الوردية (Operator Practical Layer):
 * **سلك التشكيل (Forming Fabric / Wire):**
   - شبكة بوليمرية دقيقة المسام مصنوعة من خيوط البوليستر؛ تحتجز ألياف الخشب على سطحها وتسمح للمياه بالعبور الحر من خلالها.
-* **لباد الكبس (Press Felt):**
-  - نسيج صوفي/بوليمري كثيف ومرن، يعمل كبساط ناقل للورقة الرطبة، ويمتص المياه المعصورة عند درفيل الكبس، ويوفر الحماية للشيت الضعيف أثناء النقل.
+* **لباد العصر (Press Felt):**
+  - نسيج صوفي/بوليمري كثيف ومرن، يعمل كبساط ناقل للورقة الرطبة، ويمتص المياه المعصورة عند درفيل العصر، ويوفر الحماية للشيت الضعيف أثناء النقل.
 * **مسار الالتفاف المشترك (The Converging Wedge):**
   - تلتقي ألياف السائل بين السلك الخارجي واللباد الداخلي أثناء التفافهما معاً حول درفيل التشكيل العملاق، حيث تُقذف المياه للخارج بفعل قوة الطرد المركزي الهائلة.
 
@@ -2058,7 +2058,7 @@ export const lessons: Lesson[] = [
 * **ديناميكا شد الأسلاك واللبادات (Fabric Tension Dynamics):**
   يحافظ نظام الشد الهوائي/الهيدروليكي الآلي على شد السلك واللباد في نطاقات هندسية صارمة:
   - شد سلك التشكيل: $T_{wire} = 7.0 - 9.0\\text{ kN/m}$.
-  - شد لباد الكبس: $T_{felt} = 6.0 - 8.0\\text{ kN/m}$.
+  - شد لباد العصر: $T_{felt} = 6.0 - 8.0\\text{ kN/m}$.
   انخفاض الشد عن هذه الحدود يؤدي إلى تجعد السلك وتذبذب النزح، بينما زيادته تسبب تمدد الخيوط وتآكل كراسي تحميل الدرافيل (Bearings).
 * **معادلة إجهاد الطرد المركزي على قشرة درفيل التشكيل:**
   $$\\sigma_c = \\rho_{shell} \\cdot v_{machine}^2$$
@@ -2088,7 +2088,7 @@ export const lessons: Lesson[] = [
 
 على سرعات ماكينات التيشيو الفائقة، تتحول مياه العجينة المطرودة إلى نفاثات مائية مقذوفة بقوى طرد مركزي تفوق $150\\text{ g}$. تلعب درافيل التشكيل وأحواض تجميع المياه (Saveall Pans) دوراً حاسماً في احتواء المياه ومنع ارتدادها لتخريب الشيت.
 
-![Saveall Drainage and Centrifugal Deflector Geometry](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-301-saveall.svg)
+![Saveall Drainage and Centrifugal Deflector Geometry](/images/courses/tis-301-saveall.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Tissue machine saveall tray design centrifugal water mist collection\`
@@ -2139,7 +2139,7 @@ export const lessons: Lesson[] = [
 
 تشكل منطقة التشكيل بيئة عمل عالية المخاطر نظراً لاحتوائها على درافيل عملاقة تدور بسرعات تتجاوز $2000\\text{ م/د}$، وأسلاك مشدودة تحت أطنان من القوى، وتيارات مياه عالية الضغط. التفتيش الدقيق قبل الإقلاع هو صمام الأمان لمنع الكوارث الميكانيكية والإصابات البشرية.
 
-![Forming Section Walk-Down Inspection Points](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-301-walkdown.svg)
+![Forming Section Walk-Down Inspection Points](/images/courses/tis-301-walkdown.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Tissue machine pre-start safety checklist forming section walk down\`
@@ -2198,7 +2198,7 @@ export const lessons: Lesson[] = [
 
 شهدت تكنولوجيا تشكيل ورق التيشيو ثورة هندسية انتقلت بها من ماكينات فودرينير (Fourdrinier) البطيئة وماكينات الصندوق الشفاط (Suction Breast Roll) إلى ماكينات التشكيل الهلالي الحديثة (Crescent Former) وماكينات الفجوة المزدوجة (Twin-Wire C-Former و S-Wrap).
 
-![Crescent Former vs C-Former Geometry](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-302-former-types.svg)
+![Crescent Former vs C-Former Geometry](/images/courses/tis-302-former-types.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Crescent Former vs C-Former tissue machine dewatering comparison\`
@@ -2256,7 +2256,7 @@ export const lessons: Lesson[] = [
 
 تعد نسبة سرعة التدفق إلى السلك (J/W Ratio) من أقوى أدوات التحكم المتاحة لمشغل ماكينة التيشيو. من خلال تغيير طفيف في هذه النسبة ($1 - 2\\%$)، يمكن تغيير اتجاه ترسب ألياف الخشب والتحكم الكامل في نسبة متانة الشد الطولي إلى العرضي (MD/CD Ratio).
 
-![Jet to Wire Impingement and MD/CD Orientation](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-302-jet-to-wire.svg)
+![Jet to Wire Impingement and MD/CD Orientation](/images/courses/tis-302-jet-to-wire.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Jet to wire ratio tissue machine MD CD tensile ratio orientation curve\`
@@ -2318,7 +2318,7 @@ export const lessons: Lesson[] = [
 
 حواف شيت التيشيو الرطب عند منطقة التشكيل تكون غير متساوية وتحتوي على زوائد ليفية هشة. تقوم سكاكين الحواف المائية (Edge Trimmers / Squirt Cutters) بقص وتحديد عرض الشيت بدقة ميكرونية على السلك، بينما تحافظ أجهزة التوجيه التلقائية (Auto-Guides) على سنترة واستقامة مسار الأقمشة الدوارة.
 
-![Edge Squirt Nozzles and Fabric Auto Guide Mechanism](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-302-edge-guides.svg)
+![Edge Squirt Nozzles and Fabric Auto Guide Mechanism](/images/courses/tis-302-edge-guides.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Tissue machine high pressure water squirt edge trimmer nozzle pressure\`
@@ -2369,7 +2369,7 @@ export const lessons: Lesson[] = [
 
 عند سرعات الماكينات فائقة السرعة ($1800 - 2400\\text{ م/د}$)، تصبح معادلات ميكانيكا الموائع الكلاسيكية حاسمة لفهم ديناميكا نزح المياه والتحكم في ظاهرة تكتل الألياف (Fiber Flocculation) لضمان تشكيل متجانس بصرياً وميكانيكياً.
 
-![Centrifugal Dewatering Pressure Balance P=T/R](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-303-drainage-ptr.svg)
+![Centrifugal Dewatering Pressure Balance P=T/R](/images/courses/tis-303-drainage-ptr.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Tissue machine centrifugal drainage P=T/R formula derivation\`
@@ -2424,7 +2424,7 @@ export const lessons: Lesson[] = [
 
 تمثل تكنولوجيا التجفيف بالهواء النافذ (TAD) المعيار الذهبي المطلق لإنتاج أرقى أصناف المناديل الورقية ومناشف المطبخ في العالم. على عكس الماكينات التقليدية التي تعتصر المياه ميكانيكياً، تنفخ ماكينات TAD الهواء الساخن عبر مسام الشيت لتجفيفه دون لمس أو ضغط هيكله المسامي.
 
-![Through-Air Drying TAD Honeycomb Drum Configuration](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-303-tad-flow.svg)
+![Through-Air Drying TAD Honeycomb Drum Configuration](/images/courses/tis-303-tad-flow.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Valmet ThruAir TAD tissue machine flow schematic\`
@@ -2436,7 +2436,7 @@ export const lessons: Lesson[] = [
 ### الطبقة (أ) - دليل المشغل وفني الوردية (Operator Practical Layer):
 * **الفرق بين الماكينة العادية (DCT) وماكينة TAD:**
   - *الماكينة التقليدية (Dry Crepe Tissue - DCT):* تكبس الورقة بين درافيل ثقيلة لعصر الماء، مما يضغط الألياف ويفقدها حجمها وسمكها (Bulk).
-  - *ماكينة الـ TAD:* تلغي الكبس الميكانيكي تماماً؛ وبدلاً منه، تنقل الورقة الرطبة فوق قماش ثلاثي الأبعاد وتمررها حول درفيل هائل مفرغ (Honeycomb Drum) ينفخ هواءً ساخناً ($200 - 240^\\circ\\text{C}$) يخترق مسام الورقة ليجففها بنسبة $70\\%$ في الهواء الطلق!
+  - *ماكينة الـ TAD:* تلغي العصر الميكانيكي تماماً؛ وبدلاً منه، تنقل الورقة الرطبة فوق قماش ثلاثي الأبعاد وتمررها حول درفيل هائل مفرغ (Honeycomb Drum) ينفخ هواءً ساخناً ($200 - 240^\\circ\\text{C}$) يخترق مسام الورقة ليجففها بنسبة $70\\%$ في الهواء الطلق!
 * **النتيجة الاستهلاكية:**
   ورقة منشفة TAD تزن $22\\text{ جم/م²}$ تعطي سماكة وامتصاصاً يعادل ورقة كبس تقليدي تزن $44\\text{ جم/م²}$؛ أي ضعف الامتصاص بنفس كمية الألياف!
 
@@ -2470,14 +2470,14 @@ export const lessons: Lesson[] = [
   {
     id: "les-tis-303-3",
     module_id: "mod-tis-303-2",
-    title: "تقنيات الكبس المهيكل الموفرة للطاقة (NTT & ATMOS) وموازين النزح (SOP-TAD-03)",
+    title: "تقنيات العصر المهيكل الموفرة للطاقة (NTT & ATMOS) وموازين النزح (SOP-TAD-03)",
     title_en: "Textured Tissue Technologies: NTT, ATMOS & Energy-Efficient Structuring",
     type: 'lesson',
     content: `### تقنيات التيشيو المهيكل الموفرة للطاقة (NTT & ATMOS):
 
 رغم الجودة الأسطورية لماكينات TAD، إلا أن استهلاكها المرتفع من الغاز والكهرباء دفع الشركات الهندسية الكبرى (Andritz و Voith) لتطوير حلول هجينة ثورية مثل **NTT (New Tissue Technology)** و **ATMOS (Advanced Tissue Molding System)** لتحقيق بلك ونعومة قريبة من الـ TAD ولكن باستهلاك طاقة يقارب الماكينات التقليدية.
 
-![Valmet TAD vs Andritz NTT vs Voith ATMOS Comparison](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-303-ntt-atmos.svg)
+![Valmet TAD vs Andritz NTT vs Voith ATMOS Comparison](/images/courses/tis-303-ntt-atmos.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Andritz PrimeLine NTT textured tissue press nip diagram\`
@@ -2488,8 +2488,8 @@ export const lessons: Lesson[] = [
 
 ### الطبقة (أ) - دليل المشغل وفني الوردية (Operator Practical Layer):
 * **كيف تعمل تقنية Andritz NTT؟**
-  - تستخدم حزاماً بوليمرياً منقوشاً ثلاثي الأبعاد (Textured Belt) يمر مع الورقة داخل مكبس شو برس هيدروليكي عريض (Shoe Press).
-  - يتم عصر الماء وتشكيل الورقة في وقت واحد؛ حيث تُدفع الألياف داخل وسائد الحزام دون أن تنسحق، مما ينتج ورقة ذات بلك مرتفع ($10 - 12\\text{ cm}^3/\\text{g}$) مع جفاف يصل إلى $46\\%$ بعد المكبس!
+  - تستخدم حزاماً بوليمرياً منقوشاً ثلاثي الأبعاد (Textured Belt) يمر مع الورقة داخل عصارة شو برس هيدروليكي عريض (Shoe Press).
+  - يتم عصر الماء وتشكيل الورقة في وقت واحد؛ حيث تُدفع الألياف داخل وسائد الحزام دون أن تنسحق، مما ينتج ورقة ذات بلك مرتفع ($10 - 12\\text{ cm}^3/\\text{g}$) مع جفاف يصل إلى $46\\%$ بعد العصارة!
 * **كيف تعمل تقنية Voith ATMOS؟**
   - تطبق شفطاً بالفاكيوم الحار عبر قماش مهيكل لتشكيل الشيت قبل وصوله لليانكي، مما يوفر حتى **$35\\%$ من الغاز الطبيعي** مقارنة بالـ TAD الكامل.
 
@@ -2498,24 +2498,24 @@ export const lessons: Lesson[] = [
 ### الطبقة (ب) - العمق الهندسي والنمذجة الرياضية (Engineering Rigor):
 * **مقارنة استهلاك الطاقة الشامل (Energy Benchmark Comparison):**
 
-| التكنولوجيا | الجفاف بعد الكبس | استهلاك الغاز الطبيعي | استهلاك الكهرباء | البلك النوعي |
+| التكنولوجيا | الجفاف بعد العصر | استهلاك الغاز الطبيعي | استهلاك الكهرباء | البلك النوعي |
 | :--- | :--- | :--- | :--- | :--- |
 | **DCT التقليدي** | $40 - 45\\%$ | $800 - 1000\\text{ kWh/t}$ | $600 - 750\\text{ kWh/t}$ | $7.5\\text{ cm}^3/\\text{g}$ |
 | **Andritz NTT** | $45 - 48\\%$ | $850 - 1050\\text{ kWh/t}$ | $700 - 800\\text{ kWh/t}$ | $10.5\\text{ cm}^3/\\text{g}$ |
 | **Full TAD** | لا يوجد كبس ($25\\%$) | **$1800 - 2400\\text{ kWh/t}$** | **$1000 - 1300\\text{ kWh/t}$** | **$14.5\\text{ cm}^3/\\text{g}$** |
 
-* **معادلة نبضة الكبس الهيدروليكي في تقنية NTT (Press Impulse):**
+* **معادلة نبضة العصر الهيدروليكي في تقنية NTT (Press Impulse):**
   $$I = \\frac{\\text{Linear Load}}{v_{machine}} = \\int_{0}^{t_{nip}} P(t)\\, dt \\quad [\\text{kPa}\\cdot\\text{s}]$$
-  يتيح مكبس الشو برس العريض زيادة زمن النزح بمقدار 4 أضعاف مع الحفاظ على قمة الضغط ($P_{peak} < 6\\text{ MPa}$) منخفضة لحماية وسائد البلك الميكروية.
+  يتيح عصارة الشو برس العريض زيادة زمن النزح بمقدار 4 أضعاف مع الحفاظ على قمة الضغط ($P_{peak} < 6\\text{ MPa}$) منخفضة لحماية وسائد البلك الميكروية.
 
 ---
 
 ### خطوات التشغيل المعيارية (SOP-TAD-03):
 1. افحص حالة الحزام المنقوش (Textured Belt)؛ تأكد من خلو المسام من ترسبات الكيماويات والراتنجات.
 2. شغل صندوق الفاكيوم التمهيدي المولد للبنية الثلاثية؛ اضبط الفاكيوم عند $30\\text{ kPa}$.
-3. اضبط الحمل الخطي لمكبس الشو برس NTT: ابدأ عند $90\\text{ kN/m}$ للأصناف الخفيفة وتدرج إلى $130\\text{ kN/m}$ للمناشف.
-4. افحص بروفايل سمك الورقة (Caliper) الخارجة من المكبس؛ تأكد من عدم هبوط البلك عن المستهدف القياسي ($> 10.0\\text{ cm}^3/\\text{g}$).
-5. راقب ضغط زيت هيدروليك شو المكبس (Shoe)؛ حافظ على حرارة الزيت في نطاق $45 - 55^\\circ\\text{C}$.
+3. اضبط الحمل الخطي لعصارة الشو برس NTT: ابدأ عند $90\\text{ kN/m}$ للأصناف الخفيفة وتدرج إلى $130\\text{ kN/m}$ للمناشف.
+4. افحص بروفايل سمك الورقة (Caliper) الخارجة من العصارة؛ تأكد من عدم هبوط البلك عن المستهدف القياسي ($> 10.0\\text{ cm}^3/\\text{g}$).
+5. راقب ضغط زيت هيدروليك شو العصارة (Shoe)؛ حافظ على حرارة الزيت في نطاق $45 - 55^\\circ\\text{C}$.
 
 ---
 
@@ -2523,9 +2523,9 @@ export const lessons: Lesson[] = [
 
 | العَرَض الميداني المرصود | السبب الجذري المحتمل | الإجراء الهندسي الفوري للحل |
 | :--- | :--- | :--- |
-| تسطح نقوش التيشيو وضياع ملمس الـ NTT | زيادة مفرطة في الحمل الخطي لمكبس الشو برس ($> 150\\text{ kN/m}$). | خفض حمل مكبس الشو برس فوراً وإمالة زاوية الشو برس للخلف Tilt. |
+| تسطح نقوش التيشيو وضياع ملمس الـ NTT | زيادة مفرطة في الحمل الخطي لعصارة الشو برس ($> 150\\text{ kN/m}$). | خفض حمل عصارة الشو برس فوراً وإمالة زاوية الشو برس للخلف Tilt. |
 | خطوط مائية متقطعة على رول الورق | انسداد موضعي في ثقوب الحزام المنقوش برواسب ألياف جافة. | تشغيل رشاشات الغسيل عالي الضغط بالحزام وضبط المنظف الكيميائي. |
-| ارتفاع حرارة زيت هيدروليك مكبس الشو برس عن $65^circ\\text{C}$ | انسداد مبادل تبريد الزيت الهيدروليكي أو تآكل طلمبة التزييت. | تنظيف مبادل التبريد ومراجعة سريان مياه التبريد الصناعية. |`,
+| ارتفاع حرارة زيت هيدروليك عصارة الشو برس عن $65^circ\\text{C}$ | انسداد مبادل تبريد الزيت الهيدروليكي أو تآكل طلمبة التزييت. | تنظيف مبادل التبريد ومراجعة سريان مياه التبريد الصناعية. |`,
     estimated_minutes: 25,
     order: 3,
     is_free: true,
@@ -2541,7 +2541,7 @@ export const lessons: Lesson[] = [
 
 تعتبر أسطوانة اليانكي (Yankee Dryer) قلب مصنع التيشيو وأضخم وعاء ضغط دوار في الصناعات الورقية. يصل قطرها إلى **$3.6 - 5.5\\text{ متر}$** وتزن ما بين **$80 - 150\\text{ طناً}$**. تؤدي وظيفتين متزامنتين في منتهى الدقة: التجفيف بالبخار ونقل الحركة لتوليد الكرمشة (Creping).
 
-![Yankee Cylinder and Creping Doctor Action](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-401-yankee-overview.svg)
+![Yankee Cylinder and Creping Doctor Action](/images/courses/tis-401-yankee-overview.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Yankee dryer cast iron vs steel shell heat transfer rate TAPPI\`
@@ -2594,7 +2594,7 @@ export const lessons: Lesson[] = [
 
 ليست شفرة الكريب مجرد سكين كاشط، بل أداة هندسية دقيقة تحكم شكل وحجم التجاعيد الميكروية. زاوية الجيب (Pocket Angle) وزاوية شطف الشفرة (Blade Bevel) تحددان ما إذا كانت الورقة ستتحول إلى مناديل فاخرة أو ورق خشن.
 
-![Creping Blade Pocket Angle and Holder Geometry](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-401-doctor-holder.svg)
+![Creping Blade Pocket Angle and Holder Geometry](/images/courses/tis-401-doctor-holder.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Kadant tissue creping doctor blade loading and angles drawing\`
@@ -2647,7 +2647,7 @@ export const lessons: Lesson[] = [
 
 يعد تغيير شفرة الكريب من أدق العمليات اليومية للوردية. الشفرة المستهلكة تكون شديدة السخونة ($> 100^\\circ\\text{C}$)، حادة كالموس، وتستقر على بعد ملليمترات من أسطوانة تدور بأطنان من العزم الميكانيكي. الالتزام بإجراءات السلامة هو مسألة حياة أو موت.
 
-![Doctor Blade Replacement Safety Sequence](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-401-blade-change.svg)
+![Doctor Blade Replacement Safety Sequence](/images/courses/tis-401-blade-change.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Safe creping blade change procedure tissue machine OSHA\`
@@ -2693,7 +2693,7 @@ export const lessons: Lesson[] = [
 | :--- | :--- | :--- |
 | صعوبة إدخال الشفرة الجديدة وتعليقها | تراكم كوتنج كربوني محترق داخل مجرى جيب الحامل Blade Pocket. | تنظيف المجرى بشفرة كشط نحاسية وتفريغ الرواسب بالفاكيوم. |
 | غبار سليلوزي كثيف يتراكم حول الشفرة | انسداد فلاتر هود سحب الغبار أو تراكم كتل ألياف بفتحات الشفط. | تنظيف مجاري الشفط وفحص ضغط سحب مروحة عادم الغبار. |
-| انكسار طرف الشفرة الجديد فور التحميل | بروز مفرط لطرف الشفرة اصطدم بحافة حزام درفيل الكبس أو الشاسيه. | ضبط سنترة الشفرة والتأكد من الخلوص الجانبي القياسي ($25\\text{ مم}$). |`,
+| انكسار طرف الشفرة الجديد فور التحميل | بروز مفرط لطرف الشفرة اصطدم بحافة حزام درفيل العصر أو الشاسيه. | ضبط سنترة الشفرة والتأكد من الخلوص الجانبي القياسي ($25\\text{ مم}$). |`,
     estimated_minutes: 25,
     order: 3,
     is_free: true,
@@ -2709,7 +2709,7 @@ export const lessons: Lesson[] = [
 
 يعتبر فيلم الطلاء الكيميائي المتشكل فوق سطح أسطوانة اليانكي أعقد منظومة بوليمرية تفاعلية في صناعة التيشيو. هذا الفيلم الميكروني الرقيق هو الذي يحمي معدن الأسطوانة من الاحتكاك، ويضمن التصاق الورقة لنقل الحرارة، ويحدد جودة الكرمشة ونعومة المناديل.
 
-![Yankee Coating Chemistry Triangle](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-402-coating-triangle.svg)
+![Yankee Coating Chemistry Triangle](/images/courses/tis-402-coating-triangle.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Yankee coating package adhesive release modifier chemical balance TAPPI\`
@@ -2758,14 +2758,14 @@ export const lessons: Lesson[] = [
   {
     id: "les-tis-402-2",
     module_id: "mod-tis-402-1",
-    title: "درفيل الكبس والشفط (SPR) وعوارض رش الكوتنج ومحاذاة الفواني (SOP-COAT-02)",
+    title: "درفيل العصر والشفط (SPR) وعوارض رش الكوتنج ومحاذاة الفواني (SOP-COAT-02)",
     title_en: "Suction Pressure Roll (SPR) Mechanics & Spray Boom Alignment",
     type: 'lesson',
-    content: `### درفيل الكبس والشفط وعوارض رش الكوتنج (SPR & Spray Boom):
+    content: `### درفيل العصر والشفط وعوارض رش الكوتنج (SPR & Spray Boom):
 
-يمثل درفيل الكبس والشفط (Suction Pressure Roll - SPR) المحطة الحاسمة لنقل الشيت الرطب من لباد التشكيل وتثبيته فوق أسطوانة اليانكي. تتكامل هذه العملية مع عارضة رش الكيماويات (Spray Boom) التي تهيئ سطح المعدن لاستقبال الشيت تحت ضغط نيب هائل.
+يمثل درفيل العصر والشفط (Suction Pressure Roll - SPR) المحطة الحاسمة لنقل الشيت الرطب من لباد التشكيل وتثبيته فوق أسطوانة اليانكي. تتكامل هذه العملية مع عارضة رش الكيماويات (Spray Boom) التي تهيئ سطح المعدن لاستقبال الشيت تحت ضغط نيب هائل.
 
-![Suction Pressure Roll and Spray Boom Geometry](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-402-spr-boom.svg)
+![Suction Pressure Roll and Spray Boom Geometry](/images/courses/tis-402-spr-boom.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Suction pressure roll internal vacuum box seal strip adjustment drawing\`
@@ -2775,7 +2775,7 @@ export const lessons: Lesson[] = [
 ---
 
 ### الطبقة (أ) - دليل المشغل وفني الوردية (Operator Practical Layer):
-* **درفيل الكبس والشفط (SPR):**
+* **درفيل العصر والشفط (SPR):**
   - درفيل مفرغ مثقب بآلاف الثقوب ومغطى بطبقة من البولي يوريثان المرن.
   - يحتوي بداخله على صندوق فاكيوم ثابت (Vacuum Box) يشفط المياه المعصورة من الشيت واللباد عند نقطة التلامس (Nip) بقوة فاكيوم تصل إلى $-60\\text{ kPa}$.
 * **عارضة رش الكوتنج (Spray Boom):**
@@ -2799,8 +2799,8 @@ export const lessons: Lesson[] = [
 ### خطوات التشغيل المعيارية (SOP-COAT-02):
 1. تحقق من ضغط مياه تخفيف عارضة الرشاشات ($3.5 - 4.5\\text{ bar}$) وحرارة الماء ($55 - 65^\\circ\\text{C}$).
 2. افحص زوايا فواني الرشاش؛ تأكد من ضبط زاوية الميل عند $15^circ$ Offset ومسافة البعد عن اليانكي عند $120\\text{ مم}$.
-3. شغل فاكيوم درفيل الكبس SPR؛ اضبط الفاكيوم عند $-55\\text{ kPa}$ وتأكد من تزييت شرائح العزل المائية (Seal Strips).
-4. ارفع ضغط تحميل درفيل الكبس تدريجياً حتى الحمل التشغيلي المعتمد ($85\\text{ kN/m}$).
+3. شغل فاكيوم درفيل العصر SPR؛ اضبط الفاكيوم عند $-55\\text{ kPa}$ وتأكد من تزييت شرائح العزل المائية (Seal Strips).
+4. ارفع ضغط تحميل درفيل العصر تدريجياً حتى الحمل التشغيلي المعتمد ($85\\text{ kN/m}$).
 5. راقب بصرياً خط خروج الشيت من النيب؛ يجب ألا تظهر أي فقاعات هواء محبوسة أو خطوط ظل لثقوب الدرفيل (Shadow Marks).
 
 ---
@@ -2809,9 +2809,9 @@ export const lessons: Lesson[] = [
 
 | العَرَض الميداني المرصود | السبب الجذري المحتمل | الإجراء الهندسي الفوري للحل |
 | :--- | :--- | :--- |
-| خطوط ظل لثقوب الدرفيل Shadow Marks بالورق | انسداد ثقوب التصريف بدرفيل الكبس SPR بالألياف والكيماويات. | جدولة غسيل كيميائي عالي الضغط لثقوب الدرفيل في أقرب توقف. |
+| خطوط ظل لثقوب الدرفيل Shadow Marks بالورق | انسداد ثقوب التصريف بدرفيل العصر SPR بالألياف والكيماويات. | جدولة غسيل كيميائي عالي الضغط لثقوب الدرفيل في أقرب توقف. |
 | خطوط طولية داكنة وجافة في فيلم الكوتنج | انسداد جزئي في إحدى فواني عارضة الرشاشات أو اختلال زاوية الرش. | فك وتسليك الفونية المسدودة فورياً وضبط زاوية الـ $15^circ$. |
-| اهتزاز شديد بدرفيل الكبس عند زيادة السرعة | تآكل أو تصلب غطاء البولي يوريثان المطاطي لدرفيل الكبس SPR. | فحص صلابة الغطاء بجهاز P&J وجدولة تجليخ واستعدال الغطاء. |`,
+| اهتزاز شديد بدرفيل العصر عند زيادة السرعة | تآكل أو تصلب غطاء البولي يوريثان المطاطي لدرفيل العصر SPR. | فحص صلابة الغطاء بجهاز P&J وجدولة تجليخ واستعدال الغطاء. |`,
     estimated_minutes: 25,
     order: 2,
     is_free: true,
@@ -2827,7 +2827,7 @@ export const lessons: Lesson[] = [
 
 تكشف شفرة الكريب المستهلكة لمهندس العمليات الحقيقة الكاملة لما يدور فوق سطح أسطوانة اليانكي. فحص بصمة تآكل الشفرة (Blade Footprint) بالمجهر الضوئي هو الأداة التشخيصية الأولى لتقييم صحة الكوتنج، ميكانيكا حامل الشفرة، ومعدل اهتلاك أسطوانة اليانكي.
 
-![Doctor Blade Wear Footprint and Bevel Lands](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-402-blade-footprint.svg)
+![Doctor Blade Wear Footprint and Bevel Lands](/images/courses/tis-402-blade-footprint.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Doctor blade wear footprint land width optical microscope photo TAPPI\`
@@ -2880,7 +2880,7 @@ export const lessons: Lesson[] = [
 
 تحدث عملية الكرمشة في أجزاء متناهية الصغر من الميكروثانية تحت ترددات صدم تصادمية مجهرية. تتطلب هذه العملية فهماً فيزيائياً عميقاً للسلوك اللزج المرن (Viscoelasticity) لفيلم البوليمر وألياف السليلوز عند نقطة التحول الحرجة.
 
-![Creping Delamination and Micro-fold Frequency](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-403-creping-dynamics.svg)
+![Creping Delamination and Micro-fold Frequency](/images/courses/tis-403-creping-dynamics.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`High speed tissue creping mechanics micro-fold frequency calculation\`
@@ -2929,9 +2929,9 @@ export const lessons: Lesson[] = [
     type: 'lesson',
     content: `### تكنولوجيا الشو برس (Tissue Shoe Pressing):
 
-تمثل مكابس الشو برس المخصصة للتيشيو (مثل Valmet Advantage ViscoNip و Voith NipcoFlex T) أكبر قفزة تكنولوجية في قسم الكبس خلال العقدين الأخيرين. استبدلت هذه التكنولوجيا درافيل الكبس الدائرية التقليدية بشو هيدروليكي (Hydraulic Shoe) مقعر عريض يوفر كفاءة نزح مائي فائقة مع الحفاظ الكامل على بلك وسماكة الورقة.
+تمثل عصارات الشو برس المخصصة للتيشيو (مثل Valmet Advantage ViscoNip و Voith NipcoFlex T) أكبر قفزة تكنولوجية في قسم العصر خلال العقدين الأخيرين. استبدلت هذه التكنولوجيا درافيل العصر الدائرية التقليدية بشو هيدروليكي (Hydraulic Shoe) مقعر عريض يوفر كفاءة نزح مائي فائقة مع الحفاظ الكامل على بلك وسماكة الورقة.
 
-![Shoe Press ViscoNip Pressure Distribution](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-403-shoe-press.svg)
+![Shoe Press ViscoNip Pressure Distribution](/images/courses/tis-403-shoe-press.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Valmet Advantage ViscoNip press module mechanical drawing\`
@@ -2941,19 +2941,19 @@ export const lessons: Lesson[] = [
 ---
 
 ### الطبقة (أ) - دليل المشغل وفني الوردية (Operator Practical Layer):
-* **لماذا تتفوق مكابس الشو برس على درافيل الكبس العادية؟**
-  - *درافيل الكبس الدائرية (SPR):* تضغط الورقة في مساحة ضيقة جداً ($30 - 45\\text{ مم}$) بقمة ضغط حادة تشبه "ضربة المطرقة"، مما يعتصر الماء ولكنه يسحق ألياف الورقة ويجعلها رقيقة ومسطحة.
-  - *مكابس الشو برس (Shoe Press):* تستخدم شوز (Shoe) معدنياً مقعراً مبطناً بحزام بوليمري مرن، مما يخلق منطقة تلامس عريضة جداً (**$80 - 120\\text{ مم}$**). تتيح هذه المساحة عصر الماء بلطف على مدى زمني أطول 4 أضعاف، فتخرج الورقة بجفاف هائل ($46\\%$) مع بقاء الألياف منتفخة ومحتفظة بكامل سمكها وبلكها!
+* **لماذا تتفوق عصارات الشو برس على درافيل العصر العادية؟**
+  - *درافيل العصر الدائرية (SPR):* تضغط الورقة في مساحة ضيقة جداً ($30 - 45\\text{ مم}$) بقمة ضغط حادة تشبه "ضربة المطرقة"، مما يعتصر الماء ولكنه يسحق ألياف الورقة ويجعلها رقيقة ومسطحة.
+  - *عصارات الشو برس (Shoe Press):* تستخدم شوز (Shoe) معدنياً مقعراً مبطناً بحزام بوليمري مرن، مما يخلق منطقة تلامس عريضة جداً (**$80 - 120\\text{ مم}$**). تتيح هذه المساحة عصر الماء بلطف على مدى زمني أطول 4 أضعاف، فتخرج الورقة بجفاف هائل ($46\\%$) مع بقاء الألياف منتفخة ومحتفظة بكامل سمكها وبلكها!
 
 ---
 
 ### الطبقة (ب) - العمق الهندسي والنمذجة الرياضية (Engineering Rigor):
-* **معادلة نبضة الكبس الهيدروليكية (Press Impulse Formulation):**
+* **معادلة نبضة العصر الهيدروليكية (Press Impulse Formulation):**
   $$I_{press} = \\int_{0}^{t_{nip}} P(t)\\, dt = \\frac{L_{linear}}{v_{machine}} \\quad [\\text{kPa}\\cdot\\text{s}]$$
   حيث يتيح اتساع نيب الشو برس ($w_{shoe} \\ge 100\\text{ مم}$) مضاعفة زمن بقاء الشيت تحت الضغط ($t_{nip} = w_{shoe} / v_{machine}$) دون الحاجة لرفع قمة الضغط ($P_{peak} < 6\\text{ MPa}$ مقارنة بـ $> 9\\text{ MPa}$ في الدرافيل التقليدية).
 * **معادلة توفير طاقة التجفيف:**
-  > **قاعدة طاقة التيشيو:** كل زيادة بنسبة **$1\\%$** في جفاف الشيت الخارج من قسم الكبس توفر **$4\\%$** من استهلاك بخار اليانكي وغاز الهود!
-  رفع الجفاف من $41\\%$ إلى $46\\%$ بواسطة مكبس الشو برس يوفر نحو **$20\\%$ من إجمالي فاتورة الطاقة الحرارية للمصنع**.
+  > **قاعدة طاقة التيشيو:** كل زيادة بنسبة **$1\\%$** في جفاف الشيت الخارج من قسم العصر توفر **$4\\%$** من استهلاك بخار اليانكي وغاز الهود!
+  رفع الجفاف من $41\\%$ إلى $46\\%$ بواسطة عصارة الشو برس يوفر نحو **$20\\%$ من إجمالي فاتورة الطاقة الحرارية للمصنع**.
 
 ---
 
@@ -2961,8 +2961,8 @@ export const lessons: Lesson[] = [
 
 | العَرَض الميداني المرصود | السبب الجذري المحتمل | الإجراء الهندسي الفوري للحل |
 | :--- | :--- | :--- |
-| انخفاض بلك الشيت بعد مكبس الشو برس | تحميل الشو برس بقمة ضغط حادة عند مدخل النيب بدلاً من التدرج الناعم. | إعادة برمجة ميل الشو برس شو برس هيدروليكياً (Tilt) لتأخير ذروة الضغط للمخرج. |
-| ارتفاع حرارة حزام مكبس الشو برس عن $70^circ\\text{C}$ | نقص تزييت الزيت الهيدروليكي بين الشو الثابت (Stationary Shoe) والوجه الداخلي للحزام. | فحص فواني حقن زيت التزييت الهيدروليكي ومراجعة حرارة المبادل. |
+| انخفاض بلك الشيت بعد عصارة الشو برس | تحميل الشو برس بقمة ضغط حادة عند مدخل النيب بدلاً من التدرج الناعم. | إعادة برمجة ميل الشو برس شو برس هيدروليكياً (Tilt) لتأخير ذروة الضغط للمخرج. |
+| ارتفاع حرارة حزام عصارة الشو برس عن $70^circ\\text{C}$ | نقص تزييت الزيت الهيدروليكي بين الشو الثابت (Stationary Shoe) والوجه الداخلي للحزام. | فحص فواني حقن زيت التزييت الهيدروليكي ومراجعة حرارة المبادل. |
 | تفاوت رطوبة الشيت العرضية CD Moisture Flaw | اختلال ضغط بساتم التحميل الهيدروليكية الموزعة عبر عرض الشو برس. | ضبط بروفايل البساتم الهيدروليكية المستقلة بالـ DCS لتسوية الرطوبة. |`,
     estimated_minutes: 25,
     order: 2,
@@ -2979,7 +2979,7 @@ export const lessons: Lesson[] = [
 
 أحدثت أسطوانات اليانكي المصنوعة من الصلب الملحوم (Steel Yankee Dryers - SYD) تحولاً ثورياً في كفاءة تجفيف التيشيو وسلامة التشغيل مقارنة بأسطوانات زهر الحديد الكلاسيكية. ومع ذلك، تتطلب إدارة الإجهادات الحرارية والميكانيكية وحماية الأسطوانة من علامات الاهتزاز (Chatter Marks) رقابة هندسية صارمة.
 
-![Steel vs Cast Iron Yankee Shell and Chatter Vibration Spectrum](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-403-syd-chatter.svg)
+![Steel vs Cast Iron Yankee Shell and Chatter Vibration Spectrum](/images/courses/tis-403-syd-chatter.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Steel Yankee Dryer advantages vs cast iron shell thickness Toscotec\`
@@ -3041,7 +3041,7 @@ export const lessons: Lesson[] = [
 
 يمثل البخار المشبع شريان الطاقة الحرارية لماكينة التيشيو. يدخل البخار إلى الأسطوانة عبر مفصل دوار عالي الدقة (Rotary Steam Joint) يدور مع الأسطوانة بينما تظل خطوط الإمداد الخارجية ثابتة.
 
-![Yankee Rotary Steam Joint and Siphon Assembly](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-501-steam-joint.svg)
+![Yankee Rotary Steam Joint and Siphon Assembly](/images/courses/tis-501-steam-joint.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Kadant Johnson rotary steam joint and stationary siphon drawing\`
@@ -3089,9 +3089,9 @@ export const lessons: Lesson[] = [
     type: 'lesson',
     content: `### مضخات الفاكيوم ذات الحلقة السائلة (Liquid Ring Vacuum Pumps):
 
-تمثل مضخات الفاكيوم ذات الحلقة السائلة (مثل Nash و Gardner Denver) رئة ماكينة التيشيو. مهمتها توليد الضغوط السلبية العميقة اللازمة لشفط مئات الأطنان من المياه من أقمشة التشكيل وصناديق تفريغ اللبادات ودرفيل الكبس والشفط (SPR).
+تمثل مضخات الفاكيوم ذات الحلقة السائلة (مثل Nash و Gardner Denver) رئة ماكينة التيشيو. مهمتها توليد الضغوط السلبية العميقة اللازمة لشفط مئات الأطنان من المياه من أقمشة التشكيل وصناديق تفريغ اللبادات ودرفيل العصر والشفط (SPR).
 
-![Liquid Ring Vacuum Pump Cutaway and Operation](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-501-vacuum-pump.svg)
+![Liquid Ring Vacuum Pump Cutaway and Operation](/images/courses/tis-501-vacuum-pump.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Liquid ring vacuum pump operating principle cone port Nash diagram\`
@@ -3142,7 +3142,7 @@ export const lessons: Lesson[] = [
 
 مصائد البخار (Steam Traps) هي صمامات آلية ذكية مهمتها تصريف المياه المتكاثفة والغازات غير القابلة للتكثيف من خطوط الأنابيب دون السماح للبخار الحي عالي الطاقة بالهروب. عطل مصيدة بخار واحدة قد يكلف المصنع عشرات الآلاف من الدولارات كوقود مهدور، أو يسبب ظاهرة المطرقة المائية المدمرة (Water Hammer).
 
-![Steam Trap Thermodynamic vs Ball Float Mechanism](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-501-steam-traps.svg)
+![Steam Trap Thermodynamic vs Ball Float Mechanism](/images/courses/tis-501-steam-traps.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Steam trap testing ultrasonic detector infrared thermometer procedure\`
@@ -3201,9 +3201,9 @@ export const lessons: Lesson[] = [
     type: 'lesson',
     content: `### رشاشات الغسيل عالي الضغط وهندسة التذبذب (High-Pressure Showers):
 
-لبادات الكبس (Press Felts) تعمل كإسفنجة ميكانيكية مجهرية تنضغط وتنبسط ملايين المرات يومياً. للحفاظ على مسامها مفتوحة ومنع انسدادها بالألياف والكيماويات، تعتمد الماكينة على رشاشات الغسيل الإبرية عالية الضغط (HP Oscillating Showers) التي تعمل بنظام تذبذب متزامن في غاية الدقة.
+لبادات العصر (Press Felts) تعمل كإسفنجة ميكانيكية مجهرية تنضغط وتنبسط ملايين المرات يومياً. للحفاظ على مسامها مفتوحة ومنع انسدادها بالألياف والكيماويات، تعتمد الماكينة على رشاشات الغسيل الإبرية عالية الضغط (HP Oscillating Showers) التي تعمل بنظام تذبذب متزامن في غاية الدقة.
 
-![HP Oscillating Needle Shower Overlap and Geometry](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-502-shower-nozzle.svg)
+![HP Oscillating Needle Shower Overlap and Geometry](/images/courses/tis-502-shower-nozzle.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Kadant oscillating high pressure needle shower stroke overlap calculation\`
@@ -3265,7 +3265,7 @@ export const lessons: Lesson[] = [
 
 يمثل هود أسطوانة اليانكي محرقة غازية ضخمة تستهلك ملايين الأمتار المكعبة من الغاز الطبيعي لتوفير الهواء الساخن ($450 - 500^circ	ext{C}$). ضبط كفاءة احتراق البرنرات وتوجيه الأقمشة هو الأساس لتحقيق أعلى كفاءة تجفيف بأقل تكلفة للوقود وبأعلى درجات السلامة من الحرائق.
 
-![Maxon Combustion Gas Burner and Air Ratio System](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-502-gas-burner.svg)
+![Maxon Combustion Gas Burner and Air Ratio System](/images/courses/tis-502-gas-burner.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Maxon Eclipse gas burner nozzle combustion chamber tissue hood diagram\`
@@ -3359,7 +3359,7 @@ $$\\frac{dy}{dt} = V_{fabric} \\cdot \\sin(\\theta) \\approx V_{fabric} \\cdot \
 
 يمثل الثيرموكمبريسور (Thermocompressor) قمة الهندسة الديناميكية الحرارية في إدارة بخار أسطوانة اليانكي. يعمل كمضخة حرارية نفاثة بدون أي أجزاء دوارة؛ حيث يستغل طاقة اندفاع بخار المحطة عالي الضغط لسحب وضغط بخار البلوثرو العادم وإعادته إلى اليانكي بدلاً من إهداره.
 
-![Thermocompressor Cross Section and Velocity Profile](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-503-thermocompressor.svg)
+![Thermocompressor Cross Section and Velocity Profile](/images/courses/tis-503-thermocompressor.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Spirax Sarco thermocompressor variable orifice nozzle actuator diagram\`
@@ -3411,7 +3411,7 @@ $$\\frac{dy}{dt} = V_{fabric} \\cdot \\sin(\\theta) \\approx V_{fabric} \\cdot \
 
 داخل أسطوانة اليانكي الدوارة، يتحول البخار بعد نقل حرارته إلى أطنان من المياه المتكاثفة. هذه المياه تشكل عازلاً حرارياً خطيراً يقلل انتقال الحرارة بـ 50 ضعفاً مقارنة بالصلب. إزالة هذا التكاثف تعتمد بالكامل على استقرار فرق الضغط الديناميكي (Differential Pressure - dP).
 
-![Yankee Condensate Rimming and Siphon Evacuation dP](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-503-rimming-dp.svg)
+![Yankee Condensate Rimming and Siphon Evacuation dP](/images/courses/tis-503-rimming-dp.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`Yankee dryer differential pressure control blow-through steam valve\`
@@ -3477,7 +3477,7 @@ $$\\frac{dy}{dt} = V_{fabric} \\cdot \\sin(\\theta) \\approx V_{fabric} \\cdot \
 
 يمثل هود الهواء فائق السرعة ووحدة تعويم الألياف (Dissolved Air Flotation - DAF) الركيزتين البيئية والحرارية لماكينة التيشيو. يوفر الهود أكثر من $60\\%$ من طاقة التجفيف الصدمي، بينما تسترجع وحدة الـ DAF أكثر من $98\\%$ من الألياف المفقودة من مياه الصرف لتعيدها نظيفة إلى خط الإنتاج.
 
-![Yankee High Velocity Hood Air Impingement and DAF Float System](https://raw.githubusercontent.com/sofyabbas/freetissuecamp/main/public/images/courses/tis-503-hood-daf.svg)
+![Yankee High Velocity Hood Air Impingement and DAF Float System](/images/courses/tis-503-hood-daf.svg)
 
 > **مراجع ومصطلحات البحث الصناعي الموصى بها (OEM Search Queries):**
 > * \`High velocity Yankee hood impingement nozzle velocity 150 m per s\`
@@ -4212,7 +4212,7 @@ export const quizQuestions: QuizQuestion[] = [
   {
     "id": "quiz-401-1-1",
     "lesson_id": "les-tis-401-1",
-    "question": "ما هي الفائدة التشغيلية الرئيسية لاستخدام مكبس الشو برس (Shoe Press) على أسطوانة اليانكي مقارنة بدرفيل الشفط التقليدي (Suction Press Roll)؟",
+    "question": "ما هي الفائدة التشغيلية الرئيسية لاستخدام عصارة الشو برس (Shoe Press) على أسطوانة اليانكي مقارنة بدرفيل الشفط التقليدي (Suction Press Roll)؟",
     "question_en": "What is the primary operational advantage of a Yankee Shoe Press over a Suction Press Roll?",
     "type": "multiple_choice",
     "options": [
@@ -4237,7 +4237,7 @@ export const quizQuestions: QuizQuestion[] = [
         "is_correct": false
       }
     ],
-    "explanation": "عرض نيب مكبس الشو برس (120-150 مم مقابل 40-50 مم) يوفر زمن تضاغط أطول لنزح الماء الهيدروليكي مع ذروة ضغط أقل تحمي حجم الورقة المنفوش (Bulk).",
+    "explanation": "عرض نيب عصارة الشو برس (120-150 مم مقابل 40-50 مم) يوفر زمن تضاغط أطول لنزح الماء الهيدروليكي مع ذروة ضغط أقل تحمي حجم الورقة المنفوش (Bulk).",
     "order": 1,
     "points": 10
   },
