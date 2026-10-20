@@ -5,8 +5,8 @@ export const dynamic = 'force-dynamic';
 
 // ذاكرة تخزين مؤقتة (Fallback State) تعمل تلقائياً إذا لم تكن قاعدة بيانات Supabase مهيأة بعد
 let fallbackStats = {
-  totalVisits: 1485,
-  uniqueVisits: 620,
+  totalVisits: 0,
+  uniqueVisits: 0,
   lastUpdated: new Date().toISOString(),
 };
 

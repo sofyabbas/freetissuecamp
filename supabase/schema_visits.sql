@@ -13,10 +13,11 @@ CREATE TABLE IF NOT EXISTS public.site_stats (
     created_at TIMESTAMPTZ DEFAULT NOW()
 );
 
--- 2. إدخال السجل الافتراضي إذا لم يكن موجوداً مسبقاً (مع قيمة بداية واقعية للمنصة)
+-- 2. إدخال السجل الافتراضي إذا لم يكن موجوداً مسبقاً (يبدأ من الصفر تماماً)
 INSERT INTO public.site_stats (id, total_visits, unique_visits)
-VALUES ('global', 1485, 620)
-ON CONFLICT (id) DO NOTHING;
+VALUES ('global', 0, 0)
+ON CONFLICT (id) DO UPDATE 
+SET total_visits = 0, unique_visits = 0;
 
 -- 3. تفعيل حماية Row Level Security (RLS)
 ALTER TABLE public.site_stats ENABLE ROW LEVEL SECURITY;

@@ -12,8 +12,8 @@ interface VisitData {
 
 export function VisitorCounter() {
   const [stats, setStats] = useState<VisitData>({
-    totalVisits: 1485,
-    uniqueVisits: 620,
+    totalVisits: 0,
+    uniqueVisits: 0,
   });
   const [hasLoaded, setHasLoaded] = useState(false);
 
@@ -54,8 +54,8 @@ export function VisitorCounter() {
           const data = await res.json();
           if (isMounted && data.success) {
             setStats({
-              totalVisits: Number(data.totalVisits) || 1485,
-              uniqueVisits: Number(data.uniqueVisits) || 620,
+              totalVisits: Number(data.totalVisits) || 0,
+              uniqueVisits: Number(data.uniqueVisits) || 0,
               lastVisitedAt: data.lastVisitedAt,
               source: data.source,
             });
