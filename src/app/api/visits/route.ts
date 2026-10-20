@@ -3,7 +3,50 @@ import { supabase, isSupabaseConfigured } from '@/lib/supabase/client';
 
 export const dynamic = 'force-dynamic';
 
-// ذاكرة تخزين مؤقتة (Fallback State) تعمل تلقائياً إذا لم تكن قاعدة بيانات Supabase مهيأة بعد
+// مفاتيح العداد السحابي المركزي المشترك بين جميع الأجهزة والمتصفحات في العالم (بدون حاجة لأي إعدادات)
+const CLOUD_KEY_TOTAL = 'freetissuecamp_visits_total';
+const CLOUD_KEY_UNIQUE = 'freetissuecamp_visitors_unique';
+const CLOUD_API_BASE = 'https://countapi.mileshilliard.com/api/v1';
+
+async function fetchWithTimeout(url: string, timeoutMs = 4000): Promise<Response> {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    const res = await fetch(url, {
+      signal: controller.signal,
+      headers: { 'User-Agent': 'FreeTissueCamp-Counter/1.0' },
+      cache: 'no-store',
+    });
+    clearTimeout(timer);
+    return res;
+  } catch (err) {
+    clearTimeout(timer);
+    throw err;
+  }
+}
+
+async function getCloudCount(key: string): Promise<number> {
+  try {
+    const res = await fetchWithTimeout(`${CLOUD_API_BASE}/get/${key}`);
+    if (!res.ok) return 0;
+    const data = await res.json();
+    return Number(data?.value) || 0;
+  } catch {
+    return 0;
+  }
+}
+
+async function hitCloudCount(key: string): Promise<number> {
+  try {
+    const res = await fetchWithTimeout(`${CLOUD_API_BASE}/hit/${key}`);
+    if (!res.ok) return 1;
+    const data = await res.json();
+    return Number(data?.value) || 1;
+  } catch {
+    return 1;
+  }
+}
+
 let fallbackStats = {
   totalVisits: 0,
   uniqueVisits: 0,
@@ -12,11 +55,12 @@ let fallbackStats = {
 
 /**
  * GET /api/visits
- * جلب إحصائيات العداد الحالية
+ * جلب إحصائيات العداد الحالية من السحابة المركزية
  */
 export async function GET() {
-  try {
-    if (isSupabaseConfigured()) {
+  // 1. إذا كانت Supabase مهيأة، نستخدمها أولاً
+  if (isSupabaseConfigured()) {
+    try {
       const { data, error } = await supabase
         .from('site_stats')
         .select('total_visits, unique_visits, last_visited_at')
@@ -32,12 +76,29 @@ export async function GET() {
           source: 'supabase',
         });
       }
+    } catch (err) {
+      console.warn('[Visits API] Supabase query failed, falling back:', err);
     }
-  } catch (err) {
-    console.warn('[Visits API] Supabase query failed, falling back to local memory:', err);
   }
 
-  // في حالة عدم توفر Supabase أو عدم تشغيل السكربت بعد، نعيد البيانات الافتراضية
+  // 2. استخدام السحابة المركزية المشتركة (Cloud Counter)
+  try {
+    const [total, unique] = await Promise.all([
+      getCloudCount(CLOUD_KEY_TOTAL),
+      getCloudCount(CLOUD_KEY_UNIQUE),
+    ]);
+
+    return NextResponse.json({
+      success: true,
+      totalVisits: total,
+      uniqueVisits: unique,
+      lastVisitedAt: new Date().toISOString(),
+      source: 'cloud-counter',
+    });
+  } catch (err) {
+    console.warn('[Visits API] Cloud query failed, using in-memory fallback:', err);
+  }
+
   return NextResponse.json({
     success: true,
     totalVisits: fallbackStats.totalVisits,
@@ -49,21 +110,20 @@ export async function GET() {
 
 /**
  * POST /api/visits
- * تسجيل زيارة جديدة وزيادة العداد
- * Body: { isUnique?: boolean }
+ * تسجيل زيارة جديدة وزيادة العداد في السحابة المركزية
  */
 export async function POST(req: NextRequest) {
   let isUnique = false;
   try {
-    try {
-      const body = await req.json();
-      isUnique = Boolean(body?.isUnique);
-    } catch {
-      // Body empty or invalid JSON
-    }
+    const body = await req.json();
+    isUnique = Boolean(body?.isUnique);
+  } catch {
+    // Body empty or invalid JSON
+  }
 
-    if (isSupabaseConfigured()) {
-      // 1. محاولة استدعاء الدالة المخصصة (RPC) لضمان عدم حدوث تضارب Concurrency
+  // 1. محاولة استخدام Supabase إذا كانت مفعلة
+  if (isSupabaseConfigured()) {
+    try {
       const { data, error } = await supabase.rpc('increment_site_visits', {
         is_unique: isUnique,
       });
@@ -80,47 +140,32 @@ export async function POST(req: NextRequest) {
           });
         }
       }
-
-      // 2. إذا لم تكن دالة RPC منشأة بعد، نحاول التحديث المباشر للجدول
-      const { data: currentRecord } = await supabase
-        .from('site_stats')
-        .select('total_visits, unique_visits')
-        .eq('id', 'global')
-        .maybeSingle();
-
-      if (currentRecord) {
-        const newTotal = Number(currentRecord.total_visits || 0) + 1;
-        const newUnique = isUnique
-          ? Number(currentRecord.unique_visits || 0) + 1
-          : Number(currentRecord.unique_visits || 0);
-
-        const { data: updated, error: updateError } = await supabase
-          .from('site_stats')
-          .update({
-            total_visits: newTotal,
-            unique_visits: newUnique,
-            last_visited_at: new Date().toISOString(),
-          })
-          .eq('id', 'global')
-          .select('total_visits, unique_visits, last_visited_at')
-          .single();
-
-        if (!updateError && updated) {
-          return NextResponse.json({
-            success: true,
-            totalVisits: Number(updated.total_visits),
-            uniqueVisits: Number(updated.unique_visits),
-            lastVisitedAt: updated.last_visited_at,
-            source: 'supabase-table',
-          });
-        }
-      }
+    } catch (err) {
+      console.warn('[Visits API] Supabase update failed:', err);
     }
-  } catch (err) {
-    console.warn('[Visits API] Supabase update failed, updating local fallback:', err);
   }
 
-  // تحديث العداد في وضع Fallback التجريبي
+  // 2. استخدام السحابة المركزية لحفظ الزيارة دائمياً ومشاركتها بين كل الأجهزة
+  try {
+    const totalPromise = hitCloudCount(CLOUD_KEY_TOTAL);
+    const uniquePromise = isUnique
+      ? hitCloudCount(CLOUD_KEY_UNIQUE)
+      : getCloudCount(CLOUD_KEY_UNIQUE);
+
+    const [totalVisits, uniqueVisits] = await Promise.all([totalPromise, uniquePromise]);
+
+    return NextResponse.json({
+      success: true,
+      totalVisits,
+      uniqueVisits,
+      lastVisitedAt: new Date().toISOString(),
+      source: 'cloud-counter',
+    });
+  } catch (err) {
+    console.warn('[Visits API] Cloud counter increment failed, updating in-memory:', err);
+  }
+
+  // في حالة حدوث أي طارئ في الشبكة، نلجأ للذاكرة المؤقتة
   fallbackStats.totalVisits += 1;
   if (isUnique) {
     fallbackStats.uniqueVisits += 1;
