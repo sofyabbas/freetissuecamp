@@ -53,8 +53,8 @@ export async function GET() {
  * Body: { isUnique?: boolean }
  */
 export async function POST(req: NextRequest) {
+  let isUnique = false;
   try {
-    let isUnique = false;
     try {
       const body = await req.json();
       isUnique = Boolean(body?.isUnique);
@@ -122,11 +122,8 @@ export async function POST(req: NextRequest) {
 
   // تحديث العداد في وضع Fallback التجريبي
   fallbackStats.totalVisits += 1;
-  try {
-    const body = await req.clone().json();
-    if (body?.isUnique) fallbackStats.uniqueVisits += 1;
-  } catch {
-    // ignore
+  if (isUnique) {
+    fallbackStats.uniqueVisits += 1;
   }
   fallbackStats.lastUpdated = new Date().toISOString();
 
