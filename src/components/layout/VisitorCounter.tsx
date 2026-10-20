@@ -15,7 +15,7 @@ export function VisitorCounter() {
     totalVisits: 1485,
     uniqueVisits: 620,
   });
-  const [isLoading, setIsLoading] = useState(true);
+  const [hasLoaded, setHasLoaded] = useState(false);
 
   useEffect(() => {
     let isMounted = true;
@@ -54,8 +54,8 @@ export function VisitorCounter() {
           const data = await res.json();
           if (isMounted && data.success) {
             setStats({
-              totalVisits: data.totalVisits,
-              uniqueVisits: data.uniqueVisits,
+              totalVisits: Number(data.totalVisits) || 1485,
+              uniqueVisits: Number(data.uniqueVisits) || 620,
               lastVisitedAt: data.lastVisitedAt,
               source: data.source,
             });
@@ -64,7 +64,7 @@ export function VisitorCounter() {
       } catch (err) {
         console.warn('Could not record or fetch visit count:', err);
       } finally {
-        if (isMounted) setIsLoading(false);
+        if (isMounted) setHasLoaded(true);
       }
     }
 
@@ -76,66 +76,62 @@ export function VisitorCounter() {
   }, []);
 
   return (
-    <div className="bg-charcoal-950/70 border border-charcoal-800/90 rounded-2xl p-4 sm:p-5 shadow-lg backdrop-blur-md">
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+    <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-charcoal-900 via-charcoal-950 to-charcoal-900 border-2 border-primary-500/30 p-5 sm:p-6 shadow-2xl shadow-primary-950/40">
+      {/* Decorative background glow */}
+      <div className="absolute top-0 right-0 -mt-8 -mr-8 w-36 h-36 bg-primary-500/10 rounded-full blur-2xl pointer-events-none" />
+      <div className="absolute bottom-0 left-0 -mb-8 -ml-8 w-36 h-36 bg-emerald-500/10 rounded-full blur-2xl pointer-events-none" />
+
+      <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-5">
         
         {/* Header & Status */}
-        <div className="flex items-center gap-3">
-          <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-primary-950/80 border border-primary-800/50 text-primary-400">
-            <Activity className="w-5 h-5 animate-pulse text-primary-400" />
-            <span className="absolute -top-1 -right-1 flex h-3 w-3">
+        <div className="flex items-center gap-3.5">
+          <div className="relative flex items-center justify-center w-12 h-12 rounded-xl bg-primary-900/60 border border-primary-500/40 text-primary-400 shadow-inner">
+            <Activity className="w-6 h-6 animate-pulse text-emerald-400" />
+            <span className="absolute -top-1 -right-1 flex h-3.5 w-3.5">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+              <span className="relative inline-flex rounded-full h-3.5 w-3.5 bg-emerald-500 shadow-sm shadow-emerald-400"></span>
             </span>
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <h4 className="text-sm font-bold text-white tracking-wide">
+              <h4 className="text-base font-bold text-white tracking-wide">
                 إحصائيات وزيارات المنصة
               </h4>
-              <span className="inline-flex items-center gap-1 text-[10px] font-semibold text-emerald-400 bg-emerald-950/60 border border-emerald-800/40 px-2 py-0.5 rounded-full">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                مباشر
+              <span className="inline-flex items-center gap-1.5 text-[11px] font-bold text-emerald-300 bg-emerald-950/90 border border-emerald-500/40 px-2.5 py-0.5 rounded-full shadow-xs">
+                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                مباشر الآن
               </span>
             </div>
-            <p className="text-xs text-charcoal-400 mt-0.5">
-              تفاعل المهندسين والطلاب مع محتوى تصنيع التيشيو
+            <p className="text-xs text-charcoal-300 mt-1">
+              تفاعل المهندسين والطلاب مع محتوى صناعة ورق المناديل والتشيو
             </p>
           </div>
         </div>
 
         {/* Counters Badges */}
-        <div className="flex items-center gap-3 sm:gap-4">
+        <div className="flex flex-wrap items-center gap-3 sm:gap-4">
           {/* Total Visits */}
-          <div className="flex items-center gap-2.5 bg-charcoal-900/90 border border-charcoal-800 px-3.5 py-2 rounded-xl">
-            <div className="p-1.5 rounded-lg bg-primary-950/80 text-primary-400 border border-primary-900/40">
-              <Eye className="w-4 h-4" />
+          <div className="flex items-center gap-3 bg-charcoal-900 border border-charcoal-700/80 hover:border-primary-500/50 transition-colors px-4 py-2.5 rounded-xl shadow-md">
+            <div className="p-2 rounded-lg bg-primary-950 border border-primary-500/30 text-primary-400">
+              <Eye className="w-5 h-5" />
             </div>
             <div>
-              <div className="text-[10px] text-charcoal-400 font-medium">إجمالي الزيارات</div>
-              <div className="text-sm sm:text-base font-extrabold text-white tracking-wider font-mono">
-                {isLoading ? (
-                  <span className="inline-block w-12 h-4 bg-charcoal-800 animate-pulse rounded"></span>
-                ) : (
-                  stats.totalVisits.toLocaleString('ar-EG')
-                )}
+              <div className="text-[11px] text-charcoal-300 font-medium">إجمالي الزيارات</div>
+              <div className="text-base sm:text-lg font-black text-white tracking-wider font-mono">
+                {stats.totalVisits.toLocaleString('en-US')}
               </div>
             </div>
           </div>
 
           {/* Unique Visitors */}
-          <div className="flex items-center gap-2.5 bg-charcoal-900/90 border border-charcoal-800 px-3.5 py-2 rounded-xl">
-            <div className="p-1.5 rounded-lg bg-amber-950/80 text-amber-400 border border-amber-900/40">
-              <Users className="w-4 h-4" />
+          <div className="flex items-center gap-3 bg-charcoal-900 border border-charcoal-700/80 hover:border-amber-500/50 transition-colors px-4 py-2.5 rounded-xl shadow-md">
+            <div className="p-2 rounded-lg bg-amber-950/90 border border-amber-500/40 text-amber-400">
+              <Users className="w-5 h-5" />
             </div>
             <div>
-              <div className="text-[10px] text-charcoal-400 font-medium">الزوار المستقلون</div>
-              <div className="text-sm sm:text-base font-extrabold text-amber-300 tracking-wider font-mono">
-                {isLoading ? (
-                  <span className="inline-block w-12 h-4 bg-charcoal-800 animate-pulse rounded"></span>
-                ) : (
-                  stats.uniqueVisits.toLocaleString('ar-EG')
-                )}
+              <div className="text-[11px] text-charcoal-300 font-medium">الزوار المستقلون</div>
+              <div className="text-base sm:text-lg font-black text-amber-300 tracking-wider font-mono">
+                {stats.uniqueVisits.toLocaleString('en-US')}
               </div>
             </div>
           </div>
