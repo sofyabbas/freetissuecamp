@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { BookOpen, Award, FolderGit2, Heart, Sparkles, ExternalLink } from 'lucide-react';
+import { VisitorCounter } from './VisitorCounter';
 
 export function Footer() {
   return (
@@ -94,7 +95,12 @@ export function Footer() {
 
         </div>
 
-        <div className="mt-12 pt-8 border-t border-charcoal-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-charcoal-500">
+        {/* Live Visitor Counter */}
+        <div className="mt-12">
+          <VisitorCounter />
+        </div>
+
+        <div className="mt-8 pt-8 border-t border-charcoal-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-charcoal-500">
           <p>© {new Date().getFullYear()} أكاديمية صناعة الورق (PaperCraft Academy). جميع الحقوق محفوظة للتعليم المفتوح.</p>
           <div className="flex items-center gap-1 text-charcoal-400">
             <span>صُنع بشغف لدعم المحتوى الصناعي والبيئي</span>
